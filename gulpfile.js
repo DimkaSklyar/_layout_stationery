@@ -64,6 +64,8 @@ gulp.task('sass', function(){
 gulp.task('js', function() {
 	return gulp.src([
 			'src/libs/jquery/dist/jquery.min.js',
+			'src/libs/jquery.easing/js/jquery.easing.min.js',
+			'src/libs/OwlCarousel2/dist/owl.carousel.min.js',
 			'src/js/common.js', // Always at the end
 			])
 		.pipe(concat('scripts.min.js'))
