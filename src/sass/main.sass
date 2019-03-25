@@ -88,11 +88,8 @@ a:active
     list-style: none
     padding: 0
     margin: 0
-    li:not(:first-child)
-      margin-left: 20px
-    a
-      display: inline-block
-      font-size: 20px
+    li
+      position: relative
       &::before,
       &::after
         left: -34px
@@ -100,6 +97,53 @@ a:active
         top: 0
       &::before
         top: 13px
+      &:hover .submenu
+        max-height: 300px
+        visibility: visible
+    li:not(:first-child)
+      margin-left: 60px
+    a
+      display: inline-block
+      font-size: 20px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 0
+        height: 1px
+        background-color: #fff
+        bottom: 0
+        transition: .3s
+      &:hover::before
+        width: 100%
+    .menu-with-submenu::after
+      content: ''
+      position: absolute
+      border: 5px solid #ffffff
+      border-left-color: transparent
+      border-right-color: transparent
+      border-bottom-width: 0
+      left: 50%
+      bottom: -4px
+      transform: translateX(-50%)
+    & > li > .submenu
+      display: flex
+      flex-direction: column
+      background-color: #fff
+      padding: 20px 80px 10px 20px
+      position: absolute
+      z-index: 99
+      visibility: hidden
+      transition: .3s
+      border-top: 15px solid transparent
+      background-clip: padding-box
+      & > li
+        margin-left: 0 !important
+        margin-bottom: 10px
+        a
+          color: #000000
+          display: inline-block
+          white-space: nowrap
 
 .slider
   background: url('../img/slider_bg_img.png') no-repeat
