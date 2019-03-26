@@ -52,8 +52,16 @@ $('.product-3-prev').click(function() {
     owl3.trigger('prev.owl.carousel');
 });
 
-var size = 100;
+$(".menu-item").hover(function(){
+    $(this).children(".submenu").show().addClass("active");
+}, function() {
+    $(this).children(".submenu").hide().removeClass("active");
+});
 
+
+
+
+var size = 100;
 
 $(".product-description").each(function () {
     if ($(this).text() != '') {

@@ -7779,6 +7779,12 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.25);
+  transition: .4s;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
 }
 
 a:link {
@@ -7817,6 +7823,14 @@ a:active {
   color: #ffffff;
 }
 
+.top-contacts-wrapper a {
+  transition: .3s;
+}
+
+.top-contacts-wrapper a:hover {
+  color: #da6d6e;
+}
+
 .decor-cross {
   position: relative;
   margin-left: 35px;
@@ -7847,13 +7861,27 @@ a:active {
 }
 
 .navigation .top-logo {
+  text-align: center;
+  width: fit-content;
+  transition: .4s;
   margin-bottom: 20px;
+}
+
+.navigation .top-logo:hover {
+  background: rgba(0, 0, 0, 0.3) url("../img/slider_bg_img.png");
+  background-size: 100% 100%;
+}
+
+.navigation .top-logo:hover a {
+  transform: scale(0.8);
+  transform-origin: 40% 50%;
 }
 
 .navigation .top-logo a {
   height: 80px;
   display: flex;
   align-items: center;
+  transition: .4s;
 }
 
 .navigation .top-logo a strong:first-child {
@@ -7911,11 +7939,6 @@ a:active {
   top: 13px;
 }
 
-.nav-top-navigation ul li:hover .submenu {
-  max-height: 300px;
-  visibility: visible;
-}
-
 .nav-top-navigation ul li:not(:first-child) {
   margin-left: 60px;
 }
@@ -7952,6 +7975,10 @@ a:active {
   transform: translateX(-50%);
 }
 
+.nav-top-navigation ul .menu-with-submenu:hover::after {
+  animation: arrow-up-down .4s forwards;
+}
+
 .nav-top-navigation ul > li > .submenu {
   display: flex;
   flex-direction: column;
@@ -7959,10 +7986,11 @@ a:active {
   padding: 20px 80px 10px 20px;
   position: absolute;
   z-index: 99;
-  visibility: hidden;
-  transition: .3s;
+  display: none;
   border-top: 15px solid transparent;
   background-clip: padding-box;
+  transition: 3s;
+  margin-top: -5px;
 }
 
 .nav-top-navigation ul > li > .submenu > li {
@@ -7974,6 +8002,93 @@ a:active {
   color: #000000;
   display: inline-block;
   white-space: nowrap;
+  transition: .2s;
+}
+
+.nav-top-navigation ul > li > .submenu > li a:hover {
+  color: #da6d6e;
+}
+
+.nav-top-navigation ul > li > .submenu-sale {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  width: 100%;
+  left: 0;
+  padding: 20px;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper figure {
+  background-color: #f2f2f2;
+  padding: 20px;
+  transition: .3s;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper figure:hover {
+  background-color: #da6d6e;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper figure img {
+  width: 100%;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper .name-product {
+  text-transform: uppercase;
+  color: #3e3e3e;
+  font-weight: bold;
+  display: block;
+  font-size: 18px;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper .price {
+  color: #da6d6e;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper .old-price {
+  color: #3e3e3e;
+  font-size: 20px;
+  position: relative;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.nav-top-navigation ul > li > .submenu-sale-wrapper .old-price::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-top-navigation .active {
+  animation: hvr-push .5s;
+  transform-origin: 50% 0;
+  visibility: visible;
+}
+
+.remove-position {
+  position: inherit !important;
+}
+
+.remove-position .wrap-a {
+  position: relative;
+  margin-left: -5px;
+}
+
+.remove-position .wrap-a:before, .remove-position .wrap-a:after {
+  left: -30px;
+}
+
+.remove-position .wrap-a:before {
+  top: 13px;
+}
+
+.remove-position .wrap-a:after {
+  top: 0;
 }
 
 .slider {
@@ -8035,6 +8150,11 @@ a:active {
   margin-bottom: 0;
   font-weight: 200;
   font-size: 18px;
+}
+
+.advantages-items .fa-mobile {
+  transform: rotate(35deg);
+  margin-left: 5px;
 }
 
 .about-welcome {
@@ -8488,6 +8608,25 @@ a:active {
 
 .owl-dots .owl-dot.active {
   background-color: #fff !important;
+}
+
+@keyframes hvr-push {
+  0% {
+    transform: perspective(500px) scale(0.8) rotateX(-90deg);
+  }
+
+  100% {
+  }
+}
+
+@keyframes arrow-up-down {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: -8px;
+  }
 }
 
 /*==========  Desktop First  ==========*/

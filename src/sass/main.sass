@@ -11,6 +11,10 @@ body
   padding: 10px 20px
   border-radius: 5px
   background: rgba(0,0,0,.25)
+  transition: .4s
+  &:hover
+    background: rgba(0,0,0,.7)
+    transform: scale(1.1)
 
 a
 	&:link
@@ -35,6 +39,10 @@ a:active
     padding-right: 10px
   span
     color: #ffffff
+  a
+    transition: .3s
+  a:hover
+    color: #da6d6e
 .decor-cross
   position: relative
   margin-left: 35px
@@ -57,11 +65,21 @@ a:active
 .navigation
   padding: 80px 0 0
   .top-logo
+    text-align: center
+    width: fit-content
+    transition: .4s
+    &:hover
+      background: rgba(0,0,0,.3) url('../img/slider_bg_img.png') 
+      background-size: 100% 100%
+    &:hover a
+      transform: scale(.8)
+      transform-origin: 40% 50%
     margin-bottom: 20px
     a
       height: 80px
       display: flex
       align-items: center
+      transition: .4s
       strong:first-child
         font-size: 4em
         line-height: 60px
@@ -97,9 +115,6 @@ a:active
         top: 0
       &::before
         top: 13px
-      &:hover .submenu
-        max-height: 300px
-        visibility: visible
     li:not(:first-child)
       margin-left: 60px
     a
@@ -126,6 +141,8 @@ a:active
       left: 50%
       bottom: -4px
       transform: translateX(-50%)
+    .menu-with-submenu:hover::after
+      animation: arrow-up-down .4s forwards
     & > li > .submenu
       display: flex
       flex-direction: column
@@ -133,10 +150,11 @@ a:active
       padding: 20px 80px 10px 20px
       position: absolute
       z-index: 99
-      visibility: hidden
-      transition: .3s
+      display: none
       border-top: 15px solid transparent
       background-clip: padding-box
+      transition: 3s
+      margin-top: -5px
       & > li
         margin-left: 0 !important
         margin-bottom: 10px
@@ -144,7 +162,65 @@ a:active
           color: #000000
           display: inline-block
           white-space: nowrap
-
+          transition: .2s
+          &:hover
+            color: #da6d6e
+    & > li > .submenu-sale
+      display: flex
+      flex-direction: row
+      min-height: 100%
+      width: 100%
+      left: 0
+      padding: 20px
+      &-wrapper
+        figure
+          background-color: #f2f2f2
+          padding: 20px
+          transition: .3s
+          &:hover
+            background-color: #da6d6e
+          img
+            width: 100%
+        .name-product
+          text-transform: uppercase
+          color: #3e3e3e
+          font-weight: bold
+          display: block
+          font-size: 18px
+        .price
+          color: #da6d6e
+          font-weight: bold
+          font-size: 20px
+        .old-price
+          color: #3e3e3e
+          font-size: 20px
+          position: relative
+          font-weight: bold
+          margin-right: 15px
+          &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 1px
+            background-color: #000  
+            top: 50%
+            transform: translateY(-50%)
+  .active
+    animation: hvr-push .5s
+    transform-origin: 50% 0
+    visibility: visible
+.remove-position
+  position: inherit !important
+  .wrap-a
+    position: relative
+    margin-left: -5px
+    &:before,
+    &:after
+      left: -30px
+    &:before
+      top: 13px
+    &:after
+      top: 0
 .slider
   background: url('../img/slider_bg_img.png') no-repeat
   height: 880px
@@ -187,6 +263,9 @@ a:active
         margin-bottom: 0
         font-weight: 200
         font-size: 18px
+    .fa-mobile
+      transform: rotate(35deg)
+      margin-left: 5px
 
 .about-welcome
   padding: 80px 0
@@ -508,5 +587,25 @@ a:active
   .owl-dot.active
     background-color: #fff !important
 
+
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
+@keyframes hvr-push
+  0%
+    transform: perspective(500px) scale(.8) rotateX(-90deg)
+  100%
+
+
+@keyframes arrow-up-down
+  0%
+    bottom: 0px
+  100%
+    bottom: -8px
 
 @import "media" // Always at the end
