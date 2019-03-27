@@ -296,7 +296,7 @@ a:active
       color: #9a9a9a
       font-size: 14px
 .video-discription
-  flex: 2
+  flex: 3
   font-size: 14px
   padding: 0 25px 0 0 
   p
@@ -307,11 +307,43 @@ a:active
     color: #3e3e3e
     line-height: 1
 .video-wrap
-  flex: 3
+  flex: 4
   max-width: 100%
   height: auto
+  a
+    position: relative
+    &:hover::before
+      font-size: 5.5em
+    &:hover img
+      box-shadow: -1px 7px 25px 3px rgba(0,0,0,.3)
+    &:before
+      content: '\f16a'
+      font-family: "FontAwesome"
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      font-size: 5em
+      color: red
+      line-height: 0.5
+      border-radius: 50%
+      transition: .4s
+      background-color: #fff
   img
     width: 100%
+    box-shadow: -1px 7px 15px 0 rgba(0,0,0,.21)
+    transition: .4s
+
+.popap-video
+  width: 100% 
+  outline: none 0
+  &:focus
+    outline: none 0
+.mfp-close
+  top: -40px
+  right: -15px
+.mfp-close-btn-in .mfp-close
+  color: #fff
 
 
 .category
@@ -580,7 +612,11 @@ a:active
       &:hover
         color: #da6d6e
 
-
+#small-dialog
+  text-align: left
+  max-width: 50%
+  margin: 40px auto
+  position: relative
 
 .owl-dot
   background-color: #ccc !important

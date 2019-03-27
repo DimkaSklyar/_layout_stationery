@@ -52,6 +52,7 @@ $('.product-3-prev').click(function() {
     owl3.trigger('prev.owl.carousel');
 });
 
+
 $(".menu-item").hover(function(){
     $(this).children(".submenu").show().addClass("active");
 }, function() {
@@ -75,5 +76,23 @@ $(".product-inner").each(function () {
     }
 });
 
+
+// video
+
+$('.popup-with-zoom-anim').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+    
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in'
+});
 
 });
