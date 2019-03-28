@@ -4,8 +4,9 @@
 
 /*==========  user style  ==========*/
 body
-	font-family: "Roboto Slab", sans-serif
-  color: #ffffff
+  overflow-x: hidden
+  font-family: "Roboto Slab", sans-serif
+  color: #3e3e3e
 .btn
   display: inline-block
   padding: 10px 20px
@@ -268,7 +269,10 @@ a:active
     .fa-mobile
       transform: rotate(35deg)
       margin-left: 5px
-
+.clearfix
+  &:after
+    display: table
+    clear: both
 .about-welcome
   padding: 80px 0
   &-greeting
@@ -280,10 +284,13 @@ a:active
       font-size: 60px
       line-height: 1
       color: #3e3e3e
+      +media-breakpoint-down(lg)
+        font-size: 50px
     span
       font-size: 33px
       line-height: 1
       margin-bottom: 25px
+      color: #3e3e3e
     a
       color: #000000
       border-bottom: 1px solid #000
@@ -296,20 +303,27 @@ a:active
       color: #9a9a9a
       font-size: 14px
 .video-discription
-  flex: 3
+  float: left
   font-size: 14px
   padding: 0 25px 0 0 
+  width: 41%
+  +media-breakpoint-down(lg)
+    width: 42%
   p
     color: #9a9a9a
     margin-top: 20px
     line-height: 1.3
+    +media-breakpoint-down(lg)
+      position: absolute
   b
     color: #3e3e3e
     line-height: 1
 .video-wrap
-  flex: 4
-  max-width: 100%
+  float: right
+  width: 59%
   height: auto
+  +media-breakpoint-down(lg)
+    width: 58%
   a
     position: relative
     &:hover::before
@@ -342,6 +356,8 @@ a:active
 .mfp-close
   top: -40px
   right: -15px
+  &:active
+    top: -40px
 .mfp-close-btn-in .mfp-close
   color: #fff
 
@@ -425,10 +441,23 @@ a:active
 
 .products
   margin-bottom: 60px
+  @media screen and (max-width: 1250px)
+    margin-bottom: 20px
+  +media-breakpoint-down(lg)
+    margin-bottom: 60px
+  @media screen and (max-width: 1050px)
+    margin-bottom: 20px
+  +media-breakpoint-down(md)
+    margin-bottom: 60px
   &-wrapper
     width: 1200px
     margin-left: -15px
     position: relative
+    overflow: hidden
+    +media-breakpoint-down(lg)
+      width: 990px
+    +media-breakpoint-down(md)
+      width: 750px
     .owl-nav
       position: absolute
       top: 50%
@@ -445,6 +474,24 @@ a:active
     justify-content: space-between
     z-index: 99
     transform: translateY(-50%)
+    @media screen and (max-width: 1250px)
+      display: block
+      position: relative
+      margin-top: 25px
+      text-align: right
+    +media-breakpoint-down(lg)
+      display: flex
+      position: absolute
+      margin: 0
+    @media screen and (max-width: 1050px)
+      display: block
+      position: relative
+      margin-top: 25px
+      text-align: right
+    +media-breakpoint-down(md)
+      display: flex
+      position: absolute
+      margin: 0
     a
       color: #000000
       font-size: 45px
@@ -455,8 +502,26 @@ a:active
         color: #da6d6e
     a:first-child
       margin-left: -30px
+      @media screen and (max-width: 1250px)
+        margin: 0
+        margin-right: 20px
+      +media-breakpoint-down(lg)
+        margin-left: -30px
+      @media screen and (max-width: 1050px)
+        margin: 0
+        margin-right: 20px
+      +media-breakpoint-down(md)
+        margin-left: -30px
     a:last-child
       margin-right: -30px
+      @media screen and (max-width: 1250px)
+        margin: 0
+      +media-breakpoint-down(lg)
+        margin-right: -30px
+      @media screen and (max-width: 1050px)
+        margin: 0
+      +media-breakpoint-down(md)
+        margin-right: -30px
 
   h2
     text-transform: uppercase
@@ -503,9 +568,12 @@ a:active
       font-weight: bold
       display: inline-block
       margin-bottom: 10px
+      transition: .3s
+      &:hover
+        color: #da6d6e
     p
       font-size: 14px
-      color: #dadada
+      color: #8a8a8a
     .price
       color: #da6d6e
       font-weight: bold
@@ -562,9 +630,11 @@ a:active
     font-size: 24px
 .banner-2
   .container
-    background: url('../img/banner2.jpg') no-repeat 0 50%
+    background: url('../img/banner2.jpg') no-repeat 0 25%
     background-size: cover
   .banner-wrapper
+    +media-breakpoint-down(lg)
+      padding: 50px 30px
     h2
       color: #ffffff
     a
@@ -588,7 +658,7 @@ a:active
 .page-footer
   background-color: #3e3e3e
   color: #ffffff
-  padding: 60px 0 50px
+  padding: 60px 0 20px
   .container
     padding-bottom: 40px
     border-bottom: 1px solid #767676
@@ -611,12 +681,20 @@ a:active
       transition: .3s
       &:hover
         color: #da6d6e
-
+  .copyright
+    text-align: center
+    padding-top: 20px
 #small-dialog
   text-align: left
   max-width: 50%
   margin: 40px auto
   position: relative
+.small-dialog
+  text-align: left
+  max-width: 50%
+  margin: 40px auto
+  position: relative
+  background-color: #fff
 
 .owl-dot
   background-color: #ccc !important
