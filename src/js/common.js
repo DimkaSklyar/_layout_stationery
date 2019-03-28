@@ -108,8 +108,25 @@ $(".menu-item").hover(function(){
     $(this).children(".submenu").hide().removeClass("active");
 });
 
+$(".menu-item-mobile").click(function () { 
+    if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+    }
+    else {
+        $(this).addClass("active");
+    }
+    $(this).siblings(".submenu").slideToggle();
+});
 
-
+$(".name-page").click(function () { 
+    if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+    }
+    else {
+        $(this).addClass("active");
+    }
+    $(this).siblings(".menu-mobile").slideToggle();
+});
 
 var size = 100;
 

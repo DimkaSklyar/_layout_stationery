@@ -8506,6 +8506,12 @@ a:active {
   color: #da6d6e;
 }
 
+@media (max-width: 991px) {
+  .top-contacts-wrapper .top-location {
+    margin-top: 20px;
+  }
+}
+
 .decor-cross {
   position: relative;
   margin-left: 35px;
@@ -8565,6 +8571,12 @@ a:active {
   font-weight: 200;
 }
 
+@media (max-width: 991px) {
+  .navigation .top-logo a strong:first-child {
+    font-size: 3.5em;
+  }
+}
+
 .navigation .top-logo a span:last-child {
   font-weight: bold;
   line-height: 1;
@@ -8578,6 +8590,12 @@ a:active {
 
 .navigation .callback {
   text-align: left;
+}
+
+@media (max-width: 991px) {
+  .navigation .callback {
+    text-align: right;
+  }
 }
 
 .container {
@@ -8743,6 +8761,91 @@ a:active {
   animation: hvr-push .5s;
   transform-origin: 50% 0;
   visibility: visible;
+}
+
+.nav-mobile .nav-mobile-name-page {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  position: relative;
+}
+
+.nav-mobile .nav-mobile-name-page .name-page {
+  width: 100%;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  position: relative;
+}
+
+.nav-mobile .nav-mobile-name-page .name-page:after {
+  content: '\f067';
+  position: absolute;
+  font-family: "FontAwesome";
+  right: 15px;
+  transition: .3s;
+}
+
+.nav-mobile .nav-mobile-name-page .menu-with-cross {
+  position: relative;
+}
+
+.nav-mobile .nav-mobile-name-page .menu-with-cross:after {
+  content: '\f067';
+  position: absolute;
+  font-family: "FontAwesome";
+  right: 2px;
+  transition: .3s;
+  top: 0;
+}
+
+.nav-mobile .nav-mobile-name-page .active:after {
+  transform: rotate(45deg);
+}
+
+.nav-mobile .menu-mobile {
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+  border-radius: 5px;
+}
+
+.nav-mobile .menu-mobile .menu-item-mobile {
+  margin-top: 10px;
+}
+
+.nav-mobile .menu-mobile .menu-item-mobile:last-of-type {
+  margin-bottom: 10px;
+}
+
+.nav-mobile .menu-mobile a {
+  color: #000;
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.nav-mobile .menu-mobile a:hover {
+  color: #da6d6e;
+}
+
+.nav-mobile .submenu {
+  display: none;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
 }
 
 .remove-position {

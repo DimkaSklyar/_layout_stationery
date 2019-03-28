@@ -46,6 +46,10 @@ a:active
     margin-right: 15px
   a:hover
     color: #da6d6e
+  .top-location
+    +media-breakpoint-down(md)
+      margin-top: 20px
+
 .decor-cross
   position: relative
   margin-left: 35px
@@ -87,6 +91,8 @@ a:active
         font-size: 4em
         line-height: 60px
         font-weight: 200
+        +media-breakpoint-down(md)
+          font-size: 3.5em
       span:last-child
         font-weight: bold
         line-height: 1
@@ -97,6 +103,8 @@ a:active
         height: 100%
   .callback
     text-align: left
+    +media-breakpoint-down(md)
+      text-align: right
 .container
   padding-left: 0
   padding-right: 0
@@ -212,6 +220,70 @@ a:active
     animation: hvr-push .5s
     transform-origin: 50% 0
     visibility: visible
+
+.nav-mobile
+  .nav-mobile-name-page
+    list-style: none
+    padding-left: 0
+    margin: 0
+    position: relative
+    .name-page
+      width: 100%
+      font-size: 22px
+      text-transform: uppercase
+      padding: 15px
+      background-color: rgba(255, 255, 255, 0.95)
+      border-radius: 5px
+      position: relative
+      &:after
+        content: '\f067'
+        position: absolute
+        font-family: "FontAwesome"
+        right: 15px
+        transition: .3s
+    .menu-with-cross
+      position: relative
+      &:after
+        content: '\f067'
+        position: absolute
+        font-family: "FontAwesome"
+        right: 2px
+        transition: .3s
+        top: 0
+    .active
+      &:after
+        transform: rotate(45deg)
+  .menu-mobile
+    list-style: none
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0
+    background-color: rgba(255, 255, 255, 0.95)
+    border-radius: 5px
+    display: none
+    position: absolute
+    width: 100%
+    z-index: 99999
+    border-radius: 5px
+    .menu-item-mobile
+      margin-top: 10px
+      &:last-of-type
+        margin-bottom: 10px
+    a
+      color: #000
+      display: block
+      font-size: 18px
+      text-transform: uppercase
+      transition: .3s
+      &:hover
+        color: #da6d6e
+  .submenu
+    display: none
+    position: relative
+    list-style: none
+    margin: 0
+    padding: 0
+    padding-left: 15px
 .remove-position
   position: inherit !important
   .wrap-a
