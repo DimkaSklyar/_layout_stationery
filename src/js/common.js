@@ -13,12 +13,10 @@ $('.slider-wrapper').owlCarousel({
 var owl = $('.popular-product').owlCarousel({
     items: 4,
     loop: true,
-    dots: false,
-    loop: true,
     responsive:{
         0:{
-            items:1,
-            nav:true
+            items:2,
+            dots: true
         },
         768:{
             items:3,
@@ -35,12 +33,10 @@ var owl = $('.popular-product').owlCarousel({
 var owl2 = $('.office-product').owlCarousel({
     items: 4,
     loop: true,
-    dots: false,
-    loop: true,
     responsive:{
         0:{
-            items:1,
-            nav:true
+            items:2,
+            dots: true
         },
         768:{
             items:3,
@@ -57,12 +53,10 @@ var owl2 = $('.office-product').owlCarousel({
 var owl3 = $('.papper-product').owlCarousel({
     items: 4,
     loop: true,
-    dots: false,
-    loop: true,
     responsive:{
         0:{
-            items:1,
-            nav:true
+            items:2,
+            dots: true
         },
         768:{
             items:3,

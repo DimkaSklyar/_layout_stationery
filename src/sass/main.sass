@@ -71,6 +71,8 @@ a:active
 
 .navigation
   padding: 80px 0 0
+  +media-breakpoint-down(sm)
+  padding-top: 50px
   .top-logo
     text-align: center
     width: fit-content
@@ -296,13 +298,29 @@ a:active
       top: 13px
     &:after
       top: 0
+
+.slider-wrapper
+  +media-breakpoint-down(md)
+    background: url('../img/slider_bg_img.png') no-repeat
+    background-size: 100% 100%
 .slider
   background: url('../img/slider_bg_img.png') no-repeat
-  height: 880px
+  min-height: 880px
+  +media-breakpoint-down(md)
+    background: none
+  +media-breakpoint-down(sm)
+    margin-top: 40px
   .row
     height: inherit
   &-item
     color: $default-color
+    +media-breakpoint-down(sm)
+      min-height: 450px
+      display: flex
+      justify-content: center
+      flex-direction: column
+    .btn
+      width: fit-content
     p
       max-width: 355px
       font-size: 14px
@@ -389,6 +407,8 @@ a:active
     width: 42%
   +media-breakpoint-down(md)
     width: 60%
+  +media-breakpoint-down(sm)
+    margin-top: 30px
   p
     color: #9a9a9a
     margin-top: 20px
@@ -406,6 +426,9 @@ a:active
     width: 58%
   +media-breakpoint-down(md)
     width: 100%
+  +media-breakpoint-down(sm)
+    width: 40%
+    margin-top: 30px
   a
     position: relative
     &:hover::before
@@ -446,6 +469,8 @@ a:active
 
 .category
   overflow: hidden
+  +media-breakpoint-down(sm)
+    margin-top: 50px
   &-item
     margin-bottom: 30px
     figure
@@ -494,6 +519,11 @@ a:active
       font-size: 1.7em
       +media-breakpoint-down(md)
         font-size: 1.2em
+      +media-breakpoint-down(sm)
+        padding: 20px
+        max-width: 180px
+        margin: 0 auto
+        font-size: .9em
   .sale-item
     margin-bottom: 30px
     figure
@@ -501,6 +531,9 @@ a:active
       margin: 0
       img
         height: 100%
+        +media-breakpoint-down(sm)
+          width: 100%
+          height: auto
     a
       display: block
       position: relative
@@ -514,6 +547,8 @@ a:active
         transition: .3s
         font-weight: bold
         line-height: .5
+        +media-breakpoint-down(sm)
+          font-size: 18px
     .sale-description
       position: absolute
       z-index: 10
@@ -527,9 +562,14 @@ a:active
         color: #da6d6e
         font-size: 25px
         transition: .5s
+        +media-breakpoint-down(sm)
+        font-size: 16px
+        margin: 0
         span
           font-size: 62px
           line-height: 1.4
+          +media-breakpoint-down(sm)
+            font-size: 22px
 
 .products
   margin-bottom: 60px
@@ -541,6 +581,8 @@ a:active
     margin-bottom: 20px
   +media-breakpoint-down(md)
     margin-bottom: 60px
+  +media-breakpoint-down(sm)
+    margin-bottom: 20px
   &-wrapper
     width: 1200px
     margin-left: -15px
@@ -550,6 +592,8 @@ a:active
       width: 990px
     +media-breakpoint-down(md)
       width: 750px
+    +media-breakpoint-down(sm)
+      width: 576px
     .owl-nav
       position: absolute
       top: 50%
@@ -620,6 +664,8 @@ a:active
     font-weight: 700
     font-size: 36px
     margin: 30px 0
+    +media-breakpoint-down(sm)
+      font-size: 30px
   .product-item
     figure
       padding: 30px
@@ -720,6 +766,8 @@ a:active
     text-transform: uppercase
     line-height: 1.2
     font-size: 24px
+    +media-breakpoint-down(sm)
+      padding: 80px 30px
     h2
       +media-breakpoint-down(md)
         font-size: 1.1em
@@ -730,10 +778,15 @@ a:active
   .banner-wrapper
     +media-breakpoint-down(lg)
       padding: 50px 30px
+    +media-breakpoint-down(sm)
+      margin-left: 25px
     h2
       color: #ffffff
       +media-breakpoint-down(md)
         font-size: 1em
+      +media-breakpoint-down(sm)
+        font-size: 20px
+        margin: 0
     a
       font-size: 16px
       margin-top: 20px
@@ -761,6 +814,10 @@ a:active
   .container
     padding-bottom: 40px
     border-bottom: 1px solid #767676
+    .row
+      div:nth-child(3),
+      div:nth-child(4)
+        margin-top: 30px
   i
     margin-right: 10px
   h2
@@ -808,6 +865,20 @@ a:active
   .owl-dot.active
     background-color: #fff !important
 
+.products
+  .owl-dot
+    background-color: #ccc !important
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    margin-right: 10px
+    margin-top: 25px
+  &:focus
+    outline: none 0
+  .owl-dots
+    text-align: center
+    .owl-dot.active
+      background-color: #da6d6e !important
 
 =keyframes($animation-name)
   @-webkit-keyframes #{$animation-name}
