@@ -8944,6 +8944,12 @@ a:active {
   padding: 80px 0;
 }
 
+@media (max-width: 991px) {
+  .about-welcome {
+    padding: 50px 0;
+  }
+}
+
 .about-welcome-greeting {
   flex-direction: column;
 }
@@ -8965,11 +8971,23 @@ a:active {
   }
 }
 
+@media (max-width: 991px) {
+  .about-welcome-greeting h2 {
+    font-size: 40px;
+  }
+}
+
 .about-welcome-greeting span {
   font-size: 33px;
   line-height: 1;
   margin-bottom: 25px;
   color: #3e3e3e;
+}
+
+@media (max-width: 991px) {
+  .about-welcome-greeting span {
+    font-size: 20px;
+  }
 }
 
 .about-welcome-greeting a {
@@ -9002,6 +9020,12 @@ a:active {
   }
 }
 
+@media (max-width: 991px) {
+  .video-discription {
+    width: 60%;
+  }
+}
+
 .video-discription p {
   color: #9a9a9a;
   margin-top: 20px;
@@ -9016,7 +9040,7 @@ a:active {
 
 .video-discription b {
   color: #3e3e3e;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .video-wrap {
@@ -9028,6 +9052,12 @@ a:active {
 @media (max-width: 1199px) {
   .video-wrap {
     width: 58%;
+  }
+}
+
+@media (max-width: 991px) {
+  .video-wrap {
+    width: 100%;
   }
 }
 
@@ -9103,6 +9133,12 @@ a:active {
   height: 100%;
 }
 
+@media (max-width: 991px) {
+  .category-item figure img {
+    width: 100%;
+  }
+}
+
 .category-item a {
   display: block;
   position: relative;
@@ -9130,6 +9166,14 @@ a:active {
   transition: .3s;
 }
 
+@media (max-width: 991px) {
+  .category-item a::before {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5) url("../img/slider_bg_img.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
 .category-description {
   position: absolute;
   z-index: 10;
@@ -9141,9 +9185,21 @@ a:active {
   transition: .3s;
 }
 
+@media (max-width: 991px) {
+  .category-description {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 .category-description h2 {
   color: #ffffff;
   font-size: 1.7em;
+}
+
+@media (max-width: 991px) {
+  .category-description h2 {
+    font-size: 1.2em;
+  }
 }
 
 .category .sale-item {
@@ -9513,6 +9569,12 @@ a:active {
   font-size: 24px;
 }
 
+@media (max-width: 991px) {
+  .banner-wrapper h2 {
+    font-size: 1.1em;
+  }
+}
+
 .banner-2 .container {
   background: url("../img/banner2.jpg") no-repeat 0 25%;
   background-size: cover;
@@ -9528,6 +9590,12 @@ a:active {
   color: #ffffff;
 }
 
+@media (max-width: 991px) {
+  .banner-2 .banner-wrapper h2 {
+    font-size: 1em;
+  }
+}
+
 .banner-2 .banner-wrapper a {
   font-size: 16px;
   margin-top: 20px;
@@ -9536,6 +9604,12 @@ a:active {
 .banner-2 .banner-wrapper span {
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .banner-2 .banner-wrapper span {
+    font-size: 16px;
+  }
 }
 
 .section-header-wrap {
