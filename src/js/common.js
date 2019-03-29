@@ -15,6 +15,10 @@ var owl = $('.popular-product').owlCarousel({
     loop: true,
     responsive:{
         0:{
+            items:1,
+            dots: true
+        },
+        576:{
             items:2,
             dots: true
         },
@@ -35,6 +39,10 @@ var owl2 = $('.office-product').owlCarousel({
     loop: true,
     responsive:{
         0:{
+            items:1,
+            dots: true
+        },
+        576:{
             items:2,
             dots: true
         },
@@ -55,6 +63,10 @@ var owl3 = $('.papper-product').owlCarousel({
     loop: true,
     responsive:{
         0:{
+            items:1,
+            dots: true
+        },
+        576:{
             items:2,
             dots: true
         },
