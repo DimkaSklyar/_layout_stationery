@@ -11783,9 +11783,15 @@ a:active {
 .products .product-inner p {
   font-size: 14px;
   color: #8a8a8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
-.products .product-inner .price {
+.products .product-inner .price,
+  .products .product-inner span {
   color: #da6d6e;
   font-weight: bold;
   font-size: 20px;
@@ -12102,7 +12108,7 @@ a:active {
   content: '';
   width: 30px;
   height: 1px;
-  background-color: #292b2c;
+  background-color: red;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -12152,11 +12158,15 @@ a:active {
 
 #product-dialog {
   text-align: left;
-  max-width: 65%;
+  max-width: 75%;
   padding: 15px;
   margin: 40px auto;
   position: relative;
   background-color: #fff;
+}
+
+#product-dialog figure img {
+  width: 100%;
 }
 
 #product-dialog h2 {
@@ -12240,6 +12250,77 @@ a:active {
 
 .products .owl-dots .owl-dot.active {
   background-color: #da6d6e !important;
+}
+
+.about-page {
+  margin-bottom: 60px;
+}
+
+.about-page h1 {
+  margin: 40px 0;
+  text-transform: uppercase;
+}
+
+.about-page .bcg-image {
+  background: url("../img/bcg-about-image.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: -1px 7px 15px 0 rgba(0, 0, 0, 0.21);
+  min-height: 300px;
+}
+
+.about-page .bcg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.725928) 49%, white 100%);
+}
+
+.about-page .bcg-image p {
+  position: relative;
+  padding: 20px 20px 20px 0;
+}
+
+.about-page .bcg-image p::before {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 50px;
+  background-color: red;
+  top: 0;
+  left: -30px;
+}
+
+.about-page .about-header {
+  margin-bottom: 40px;
+}
+
+.about-page .about-description {
+  background: url("../img/crayons.png") no-repeat 85% 85%;
+}
+
+.about-page .about-description-text {
+  background: #fff;
+  box-shadow: 0px 0px 20px 30px #fff;
+}
+
+.about-page .about-description .count-product {
+  background-color: #f54a4c;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.about-page .about-description .count-product .quality {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
 }
 
 @keyframes hvr-push {

@@ -134,13 +134,13 @@ $(".name-page").click(function () {
     $(this).siblings(".menu-mobile").slideToggle();
 });
 
-var size = 100;
+// var size = 100;
 
-$(".product-description").each(function () {
-    if ($(this).text() != '') {
-        $(this).text($(this).text().substring(0, size) + "...");
-    }
-});
+// $(".product-description").each(function () {
+//     if ($(this).text() != '') {
+//         $(this).text($(this).text().substring(0, size) + "...");
+//     }
+// });
 
 $(".product-inner").each(function () {
     if($(this).children(".old-price").length > 0) {
@@ -203,21 +203,38 @@ $('.popup-with-form').magnificPopup({
 var price;
 var quality;
 
+$("a[href='#product-dialog']").click(function () {
+    price = +$(this).closest(".product-item").find(".price").text() * 100;
+    $("#product-form-price").text(parseFloat(price / 100).toFixed(2));
+    $("#count-product").val(1);
+    $("#product-img").attr("src",  $(this).closest(".product-item").find("img").attr("src"));
+    $("#product-name").text($(this).closest(".product-item").find(".name-product").text());
+    $("#product-description").text($(this).closest(".product-item").find(".product-description").text())
+});
+
 $(".plus").click(function () { 
     if (($(this).siblings("#count-product").val() == 1)) {
-        price = $(this).parent().parent().children(".price").text();
         quality = price;
     }
     $(this).siblings("#count-product").val(+$(this).siblings("#count-product").val()+1);
     
     quality = +quality + +price;
-    console.log(quality);
-    $(this).parent().parent().children(".price").text(quality);
+    $(this).parent().parent().children(".price").text(parseFloat(quality / 100).toFixed(2));
 });
+
 $(".minus").click(function () { 
-    if ($(this).siblings("#count-product").val() >1) {
+    if ($(this).siblings("#count-product").val() > 1) {
+        if (($(this).siblings("#count-product").val() == 1)) {
+            quality = price;
+        }
         $(this).siblings("#count-product").val(+$(this).siblings("#count-product").val()-1);
+        
+        quality = +quality - +price;
+        $(this).parent().parent().children(".price").text(parseFloat(quality / 100).toFixed(2));
     }
-    
 });
+
+
+
+
 });
