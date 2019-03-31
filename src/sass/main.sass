@@ -1006,6 +1006,10 @@ a:active
   margin: 40px auto
   position: relative
   background-color: #fff
+  +media-breakpoint-down(md)
+    max-width: 85%
+  +media-breakpoint-down(sm)
+    max-width: 95%
   figure
     img
       width: 100%
@@ -1013,6 +1017,10 @@ a:active
     text-transform: uppercase
     font-size: 2.5em
     line-height: 1.3
+    +media-breakpoint-down(lg)
+      font-size: 2em
+    +media-breakpoint-down(md)
+      font-size: 1.7em
   .price,
   .rub
     font-size: 2.5em
@@ -1030,10 +1038,17 @@ a:active
     font-size: 1.6em
     cursor: pointer
     margin-top: 30px
+    +media-breakpoint-down(lg)
+      font-size: 1.3em
+    +media-breakpoint-down(md)
+      padding: 10px 30px
   .count
     border: 1px solid #000000
     border-radius: 20px
     margin-right: 40px
+    +media-breakpoint-down(sm)
+      width: fit-content
+      margin: 0 auto
     .quality
       padding: 10px 15px
       line-height: 1
@@ -1051,6 +1066,13 @@ a:active
         outline: none 0
       &::-webkit-inner-spin-button
         display: none
+  .product-price-quality
+    +media-breakpoint-down(sm)
+      display: block !important
+      text-align: center
+  .wrap-btn
+    +media-breakpoint-down(sm)
+    text-align: center
 .owl-dots
   .owl-dot.active
     background-color: #fff !important
@@ -1074,6 +1096,7 @@ a:active
 
 // about.html
 
+.page,
 .about-page
   margin-bottom: 60px
   h1
@@ -1124,10 +1147,101 @@ a:active
         font-weight: bold
         line-height: 1
 
+// pay-delivery page
 
-
-
-
+.pay-delivery-page
+  .delivery-wrap
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+      li
+        position: relative
+        padding: 10px 30px
+        &:before
+          content: '\f07a'
+          position: absolute
+          font-family: "FontAwesome"
+          left: 0
+          font-size: 18px
+          color: #8e8e8e
+        &:nth-child(2)::before
+          content: '\f2b5'
+        &:nth-child(3)::before,
+        &:nth-child(4)::before
+          content: '\f017'
+        &:nth-child(5)::before
+          content: '\f016'
+  .delivery-info-wrap
+    background: url('../img/pay-bcg.jpg') no-repeat
+    background-size: cover
+    position: relative
+    border-radius: 5px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: #000  
+      opacity: .8
+      box-shadow: -3px 16px 20px 3px rgba(0, 0, 0, 0.4117647058823529)
+      border-radius: 5px
+    .delivery-info-inner
+      position: relative
+      z-index: 199
+      padding: 60px 30px
+      color: #ffffff
+      font-weight: 200
+      h3
+        margin-top: 30px
+        text-transform: uppercase
+        font-weight: bold
+      ul
+        padding-left: 25px
+      span
+        color: #ff0000
+        font-weight: bold
+.pay
+  margin-bottom: 80px
+  .col-12
+    +media-breakpoint-down(md)
+      margin: 20px 0
+  h1
+    margin-bottom: 40px
+    text-transform: uppercase
+  .pay-wrapper
+    background-color: #eee
+    padding: 40px 30px
+    min-height: 450px
+    +media-breakpoint-down(lg)
+      min-height: 470px
+    +media-breakpoint-down(md)
+      min-height: 200px
+    i
+      font-size: 6em
+      color: #ccc
+      margin: 20px 0 30px
+    span
+      color: #ff0000
+      font-weight: bold
+  .col-12:nth-child(2)
+    .pay-wrapper
+      margin-left: 15px
+      margin-right: 15px
+      +media-breakpoint-down(md)
+        margin: 0
+  .col-12:nth-child(1)
+    .pay-wrapper
+      margin-right: 15px
+      +media-breakpoint-down(md)
+        margin: 0
+  .col-12:nth-child(3)
+    .pay-wrapper
+      margin-left: 15px
+      +media-breakpoint-down(md)
+        margin: 0
 
 =keyframes($animation-name)
   @-webkit-keyframes #{$animation-name}

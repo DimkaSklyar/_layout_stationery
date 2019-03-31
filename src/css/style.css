@@ -12165,6 +12165,18 @@ a:active {
   background-color: #fff;
 }
 
+@media (max-width: 991px) {
+  #product-dialog {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 767px) {
+  #product-dialog {
+    max-width: 95%;
+  }
+}
+
 #product-dialog figure img {
   width: 100%;
 }
@@ -12173,6 +12185,18 @@ a:active {
   text-transform: uppercase;
   font-size: 2.5em;
   line-height: 1.3;
+}
+
+@media (max-width: 1199px) {
+  #product-dialog h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 991px) {
+  #product-dialog h2 {
+    font-size: 1.7em;
+  }
 }
 
 #product-dialog .price,
@@ -12196,10 +12220,29 @@ a:active {
   margin-top: 30px;
 }
 
+@media (max-width: 1199px) {
+  #product-dialog button.btn {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 991px) {
+  #product-dialog button.btn {
+    padding: 10px 30px;
+  }
+}
+
 #product-dialog .count {
   border: 1px solid #000000;
   border-radius: 20px;
   margin-right: 40px;
+}
+
+@media (max-width: 767px) {
+  #product-dialog .count {
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 
 #product-dialog .count .quality {
@@ -12227,6 +12270,17 @@ a:active {
   display: none;
 }
 
+@media (max-width: 767px) {
+  #product-dialog .product-price-quality {
+    display: block !important;
+    text-align: center;
+  }
+}
+
+#product-dialog .wrap-btn {
+  text-align: center;
+}
+
 .owl-dots .owl-dot.active {
   background-color: #fff !important;
 }
@@ -12252,16 +12306,19 @@ a:active {
   background-color: #da6d6e !important;
 }
 
+.page,
 .about-page {
   margin-bottom: 60px;
 }
 
-.about-page h1 {
+.page h1,
+  .about-page h1 {
   margin: 40px 0;
   text-transform: uppercase;
 }
 
-.about-page .bcg-image {
+.page .bcg-image,
+  .about-page .bcg-image {
   background: url("../img/bcg-about-image.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -12271,7 +12328,8 @@ a:active {
   min-height: 300px;
 }
 
-.about-page .bcg-image::before {
+.page .bcg-image::before,
+    .about-page .bcg-image::before {
   content: '';
   position: absolute;
   top: 0;
@@ -12281,12 +12339,14 @@ a:active {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.725928) 49%, white 100%);
 }
 
-.about-page .bcg-image p {
+.page .bcg-image p,
+    .about-page .bcg-image p {
   position: relative;
   padding: 20px 20px 20px 0;
 }
 
-.about-page .bcg-image p::before {
+.page .bcg-image p::before,
+      .about-page .bcg-image p::before {
   position: absolute;
   content: '';
   height: 10px;
@@ -12296,20 +12356,24 @@ a:active {
   left: -30px;
 }
 
-.about-page .about-header {
+.page .about-header,
+  .about-page .about-header {
   margin-bottom: 40px;
 }
 
-.about-page .about-description {
+.page .about-description,
+  .about-page .about-description {
   background: url("../img/crayons.png") no-repeat 85% 85%;
 }
 
-.about-page .about-description-text {
+.page .about-description-text,
+    .about-page .about-description-text {
   background: #fff;
   box-shadow: 0px 0px 20px 30px #fff;
 }
 
-.about-page .about-description .count-product {
+.page .about-description .count-product,
+    .about-page .about-description .count-product {
   background-color: #f54a4c;
   color: #ffffff;
   border-radius: 5px;
@@ -12317,10 +12381,161 @@ a:active {
   padding: 60px 30px;
 }
 
-.about-page .about-description .count-product .quality {
+.page .about-description .count-product .quality,
+      .about-page .about-description .count-product .quality {
   font-size: 50px;
   font-weight: bold;
   line-height: 1;
+}
+
+.pay-delivery-page .delivery-wrap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pay-delivery-page .delivery-wrap ul li {
+  position: relative;
+  padding: 10px 30px;
+}
+
+.pay-delivery-page .delivery-wrap ul li:before {
+  content: '\f07a';
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 0;
+  font-size: 18px;
+  color: #8e8e8e;
+}
+
+.pay-delivery-page .delivery-wrap ul li:nth-child(2)::before {
+  content: '\f2b5';
+}
+
+.pay-delivery-page .delivery-wrap ul li:nth-child(3)::before, .pay-delivery-page .delivery-wrap ul li:nth-child(4)::before {
+  content: '\f017';
+}
+
+.pay-delivery-page .delivery-wrap ul li:nth-child(5)::before {
+  content: '\f016';
+}
+
+.pay-delivery-page .delivery-info-wrap {
+  background: url("../img/pay-bcg.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+.pay-delivery-page .delivery-info-wrap:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: .8;
+  box-shadow: -3px 16px 20px 3px rgba(0, 0, 0, 0.411765);
+  border-radius: 5px;
+}
+
+.pay-delivery-page .delivery-info-wrap .delivery-info-inner {
+  position: relative;
+  z-index: 199;
+  padding: 60px 30px;
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.pay-delivery-page .delivery-info-wrap .delivery-info-inner h3 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pay-delivery-page .delivery-info-wrap .delivery-info-inner ul {
+  padding-left: 25px;
+}
+
+.pay-delivery-page .delivery-info-wrap .delivery-info-inner span {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.pay {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  .pay .col-12 {
+    margin: 20px 0;
+  }
+}
+
+.pay h1 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.pay .pay-wrapper {
+  background-color: #eee;
+  padding: 40px 30px;
+  min-height: 450px;
+}
+
+@media (max-width: 1199px) {
+  .pay .pay-wrapper {
+    min-height: 470px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pay .pay-wrapper {
+    min-height: 200px;
+  }
+}
+
+.pay .pay-wrapper i {
+  font-size: 6em;
+  color: #ccc;
+  margin: 20px 0 30px;
+}
+
+.pay .pay-wrapper span {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.pay .col-12:nth-child(2) .pay-wrapper {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .pay .col-12:nth-child(2) .pay-wrapper {
+    margin: 0;
+  }
+}
+
+.pay .col-12:nth-child(1) .pay-wrapper {
+  margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .pay .col-12:nth-child(1) .pay-wrapper {
+    margin: 0;
+  }
+}
+
+.pay .col-12:nth-child(3) .pay-wrapper {
+  margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .pay .col-12:nth-child(3) .pay-wrapper {
+    margin: 0;
+  }
 }
 
 @keyframes hvr-push {
