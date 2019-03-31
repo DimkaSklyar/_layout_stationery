@@ -1243,6 +1243,49 @@ a:active
       +media-breakpoint-down(md)
         margin: 0
 
+
+// contacts page
+
+.contacts-page
+  .contacts-wrapper
+    padding: 0 40px 40px
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+      li
+        margin-top: 33px
+        position: relative
+        padding-left: 30px
+        &:before
+          content: '\f041'
+          position: absolute
+          font-family: "FontAwesome"
+          left: 0
+          font-size: 18px
+          color: #ff2a2c
+        &:nth-child(2)::before
+          content: '\f095'
+        &:nth-child(3)::before
+          content: '\f017'
+        &:nth-child(4)::before
+          content: '\f003'
+        a
+          color: #292b2c
+    .consult
+      margin-top: 35px
+      b
+        margin-bottom: 15px
+        display: block
+      .btn
+        margin-top: 20px
+        border: none
+        color: #ffffff
+        cursor: pointer
+        font-family: "Roboto Slab",sans-serif
+        background: rgb(255, 42, 44)
+
+
 =keyframes($animation-name)
   @-webkit-keyframes #{$animation-name}
     @content

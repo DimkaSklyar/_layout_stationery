@@ -234,7 +234,13 @@ $(".minus").click(function () {
     }
 });
 
+$("#consult").click(function () { 
+    $("#callback-header").text($(this).text());
+});
 
+$("#call-me").click(function () { 
+    $("#callback-header").text("Заказать звонок");
+});
 
 
 });

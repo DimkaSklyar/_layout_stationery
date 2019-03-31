@@ -12538,6 +12538,65 @@ a:active {
   }
 }
 
+.contacts-page .contacts-wrapper {
+  padding: 0 40px 40px;
+}
+
+.contacts-page .contacts-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-page .contacts-wrapper ul li {
+  margin-top: 33px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.contacts-page .contacts-wrapper ul li:before {
+  content: '\f041';
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 0;
+  font-size: 18px;
+  color: #ff2a2c;
+}
+
+.contacts-page .contacts-wrapper ul li:nth-child(2)::before {
+  content: '\f095';
+}
+
+.contacts-page .contacts-wrapper ul li:nth-child(3)::before {
+  content: '\f017';
+}
+
+.contacts-page .contacts-wrapper ul li:nth-child(4)::before {
+  content: '\f003';
+}
+
+.contacts-page .contacts-wrapper ul li a {
+  color: #292b2c;
+}
+
+.contacts-page .contacts-wrapper .consult {
+  margin-top: 35px;
+}
+
+.contacts-page .contacts-wrapper .consult b {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contacts-page .contacts-wrapper .consult .btn {
+  margin-top: 20px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Roboto Slab",sans-serif;
+  background: #ff2a2c;
+}
+
 @keyframes hvr-push {
   0% {
     transform: perspective(500px) scale(0.8) rotateX(-90deg);
