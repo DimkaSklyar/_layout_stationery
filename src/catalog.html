@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<header class="page-header">
+		<div class="header-wrapper">
+			<div class="container top-contacts-wrapper">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 d-flex d-lg-block justify-content-center">
+						<div class="top-contacts d-flex d-sm-block">
+							<a href="tel:+78619999999"><i class="fa fa-phone" aria-hidden="true"></i>+7 (861)
+								99-99-999</a>
+							<a href="mailto:info@info.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@info.ru</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 d-flex d-lg-block justify-content-center">
+						<div class="top-location d-flex justify-content-lg-end justify-content-center flex-column flex-sm-row">
+							<a href="#time"><i class="fa fa-clock-o" aria-hidden="true"></i>пн - сб (09:00 - 18:00)</a>
+							<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A46503954a639ddf158babc40cecd2fc92ba3b58baa1a9928806c2a0d7dec337a&amp;source=constructor"
+								class="popup-with-zoom-anim popup-gmaps"><i class="fa fa-location-arrow" aria-hidden="true"></i>Показать
+								на карте</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container navigation">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-8 col-lg-9 d-flex d-md-block justify-content-center">
+						<div class="top-logo">
+							<a href="index.html">
+								<!-- <img src="img/logo.png" alt=""> -->
+								<strong>22 Карандаша</strong>
+								<span>онлайн <br> каталог</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 flex-first flex-md-unordered d-flex d-md-block justify-content-center">
+						<div class="callback">
+							<a href="#form-callback" class="btn popup-with-form" id="call-me">Заказать звонок</a>
+
+							<form id="form-callback" class="mfp-hide white-popup-block form-dialog">
+								<h2 id="callback-header">Заказать звонок</h2>
+								<fieldset style="border:0;">
+									<p>Оставте ваш номер <br>мы вам перезвоним</p>
+									<ol>
+										<li>
+											<input id="name" name="name" type="text" placeholder="Имя" required="">
+										</li>
+										<li>
+											<input id="phone" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+										</li>
+									</ol>
+								</fieldset>
+								<div id="messegeResult-order">
+									<button id="submit-form-z" type="submit" form="form-callback" class="btn">Отправить</button>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="nav-top-navigation d-none d-lg-block">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li class="decor-cross menu-item">
+								<a href="about.html" class="menu-with-submenu">Каталог</a>
+								<ul class="submenu">
+									<li><a href="#">Бумага</a></li>
+									<li><a href="#">Товары для офиса</a></li>
+									<li><a href="#">Письменные принадлежности</a></li>
+									<li><a href="#">Развивающие товары</a></li>
+									<li><a href="#">Товары для школы</a></li>
+								</ul>
+							</li>
+							<li class="decor-cross menu-item"><a href="pay-delivery.html">Доставка и оплата</a>
+							</li>
+							<li class="menu-item remove-position">
+								<div class="decor-cross wrap-a">
+									<a href="sale.html" class="menu-with-submenu">Скидки</a>
+								</div>
+								<ul class="submenu submenu-sale" style="display: none">
+									<li class="col">
+										<div class="submenu-sale-wrapper">
+											<a href="#">
+												<figure><img src="img/product1.png" alt=""></figure>
+											</a>
+											<a href="#" class="name-product">Имя товара</a>
+											<span class="old-price">&#8381;100.00</span>
+											<span class="price">&#8381;100</span>
+										</div>
+									</li>
+									<li class="col">
+										<div class="submenu-sale-wrapper">
+											<a href="#">
+												<figure><img src="img/product2.png" alt=""></figure>
+											</a>
+											<a href="#" class="name-product">Имя товара</a>
+											<span class="old-price">&#8381;100.00</span>
+											<span class="price">&#8381;100</span>
+										</div>
+									</li>
+									<li class="col">
+										<div class="submenu-sale-wrapper">
+											<a href="#">
+												<figure><img src="img/product3.png" alt=""></figure>
+											</a>
+											<a href="#" class="name-product">Имя товара</a>
+											<span class="old-price">&#8381;100.00</span>
+											<span class="price">&#8381;100</span>
+										</div>
+									</li>
+									<li class="col">
+										<div class="submenu-sale-wrapper">
+											<a href="#">
+												<figure><img src="img/product4.png" alt=""></figure>
+											</a>
+											<a href="#" class="name-product">Имя товара</a>
+											<span class="old-price">&#8381;100.00</span>
+											<span class="price">&#8381;100</span>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="decor-cross menu-item"><a href="about.html">О нас</a></li>
+							<li class="decor-cross menu-item"><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="nav-mobile d-block d-lg-none col-12">
+						<ul class="nav-mobile-name-page">
+							<li class="name-page"><span>Меню</span></li>
+							<ul class="menu-mobile">
+								<li class="menu-item-mobile"><a href="index.html">Главная</a></li>
+								<li class="menu-item-mobile menu-with-cross"><a href="#" class="menu-with-submenu">Каталог</a></li>
+								<ul class="submenu">
+									<li class="menu-item-mobile"><a href="#">Бумага</a></li>
+									<li class="menu-item-mobile"><a href="#">Товары для офиса</a></li>
+									<li class="menu-item-mobile"><a href="#">Письменные принадлежности</a></li>
+									<li class="menu-item-mobile"><a href="#">Развивающие товары</a></li>
+									<li class="menu-item-mobile"><a href="#">Товары для школы</a></li>
+								</ul>
+								<li class="menu-item-mobile"><a href="shipping-delivery.html">Доставка и оплата</a></li>
+								<li class="menu-item-mobile"><a href="sale.html">Скидки</a>
+								</li>
+								<li class="menu-item-mobile"><a href="about.html">О нас</a></li>
+								<li class="menu-item-mobile"><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="catalog page-link">
+			<div class="container">
+				<h1>Каталог товаров</h1>
+				<div class="row no-gutters">
+					<div class="col-xl-3 col-lg-4">
+						<h2>Категории</h2>
+						<ul class="category d-flex d-lg-block">
+							<li><button id="all" class="catalog-btn" type="button" data-filter="all">Все</button></li>
+							<li><button id="peppers" class="catalog-btn catalog-category" type="button" data-filter=".peppers">Бумага</button></li>
+							<li><button id="office" class="catalog-btn catalog-category" type="button" data-filter=".office">Товары для
+									офиса</button></li>
+							<li><button id="writing" class="catalog-btn catalog-category" type="button" data-filter=".writing">Письменные
+									принадлежности</button></li>
+							<li><button id="development" class="catalog-btn catalog-category" type="button" data-filter=".development">Развивающие
+									товары</button></li>
+							<li><button id="school" class="catalog-btn catalog-category" type="button" data-filter=".school">Товары для
+									школы</button></li>
+							<li><button id="sale" class="catalog-btn catalog-category catalog-btn-sale" type="button" data-filter=".sale">Скидки
+									и предложения</button></li>
+						</ul>
+					</div>
+					<div class="col-xl-9 col-lg-8">
+						<h2>Продукция</h2>
+						<div class="sort-category-wrapper">
+							<div class="sort-category-pepper" style="display: none;">
+								<button class="catalog-btn" type="button" data-toggle=".category-a">Бумага для заметок</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-b">Бумага для офисной техники</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Бухгалтерские книги и
+									бланки</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Почтовые конверты и пакеты</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Ролики и чековая лента</button>
+							</div>
+							<div class="sort-category-office" style="display: none;">
+								<button class="catalog-btn" type="button" data-toggle=".category-a">Дыроколы</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-b">Клей</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Офисные ножницы и ножи</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Скобы для степлеров</button>
+							</div>
+							<div class="sort-category-writing" style="display: none;">
+								<button class="catalog-btn" type="button" data-toggle=".category-a">Линейки</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-b">Корректирующие средства</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Маркеры и текстовыделители</button>
+							</div>
+							<div class="sort-category-development" style="display: none;">
+								<button class="catalog-btn" type="button" data-toggle=".category-a">Мел</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-b">Наборы для творчества</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Пластилин, доски для лепки</button>
+							</div>
+							<div class="sort-category-school" style="display: none;">
+								<button class="catalog-btn" type="button" data-toggle=".category-a">Цветная бумага</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-b">Тетради</button>
+								<button class="catalog-btn" type="button" data-toggle=".category-c">Фломастеры, карандаши</button>
+							</div>
+						</div>
+						<div class="sort-category-all">
+							<span>Сортировать по:</span>
+								<select name="sorting" id="sorting" class="select-sort">
+									<option value="order:default">По умолчанию</option>
+									<option value="order:asc">Цена: по возростанию</option>
+									<option value="order:desc">Цена: по убыванию</option>
+								</select>
+						</div>
+						<div class="catalog-container products row">
+							<div class="col-md-4 col-sm-6 mix peppers" data-order="1">
+								<div class="product-item">
+									<figure>
+										<img src="img/product1.png" alt="">
+										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+									</figure>
+									<div class="product-inner">
+										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
+										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
+											provident et at dolorum sint, blanditiis saepe id commodi?</p>
+										<span class="old-price">&#8381;100.00</span>
+										<span class="price">100.00</span><span>&#8381;</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6  mix">
+								<div class="product-item">
+									<figure>
+										<img src="img/product2.png" alt="">
+										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+									</figure>
+									<div class="product-inner">
+										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
+										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
+											provident et at dolorum sint, blanditiis saepe id commodi?</p>
+										<span class="old-price">&#8381;100.00</span>
+										<span class="price">100.00</span><span>&#8381;</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix peppers" data-order="3">
+								<div class="product-item">
+									<figure>
+										<img src="img/product3.png" alt="">
+										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+									</figure>
+									<div class="product-inner">
+										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
+										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
+											provident et at dolorum sint, blanditiis saepe id commodi?</p>
+										<span class="price">100.00</span><span>&#8381;</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6  mix">
+								<div class="product-item">
+									<figure>
+										<img src="img/product5.png" alt="">
+										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+									</figure>
+									<div class="product-inner">
+										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
+										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
+											provident et at dolorum sint, blanditiis saepe id commodi?</p>
+										<span class="price">100.00</span><span>&#8381;</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6  mix">
+								<div class="product-item">
+									<figure>
+										<img src="img/product6.png" alt="">
+										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+									</figure>
+									<div class="product-inner">
+										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
+										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
+											provident et at dolorum sint, blanditiis saepe id commodi?</p>
+										<span class="price">100.00</span><span>&#8381;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!-- product-dialog -->
+		<div id="product-dialog" class="zoom-anim-dialog mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-5 col-12">
+						<figure><img src="img/product1.png" alt="" id="product-img"></figure>
+					</div>
+					<div class="col-lg-6 col-md-7 col-12">
+						<div class="product-dialog-description d-flex flex-column justify-content-center h-100">
+							<h2 id="product-name">Дырокол SAX 506 до 40л., металл, с лин., синий, Австрия-Венгрия</h2>
+							<p id="product-description">Материал корпуса дырокола: металл/пластик. Пробивает одновременно два
+								отверстия. Диаметр
+								отверстия 5,5 мм. Расстояние между отверстиями 80 мм. Встроенная линейка отсутствует.</p>
+							<div class="product-price-quality d-flex align-items-center">
+								<div class="count">
+									<span class="quality minus">-</span>
+									<input type="number" name="count-product" id="count-product" value="1" min="1">
+									<span class="quality plus">+</span>
+								</div>
+								<span id="product-form-price" class="price">100</span><span class="rub"> &#8381;</span>
+							</div>
+							<div class="wrap-btn">
+								<button class="btn">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</main>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<h2>Навигация</h2>
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="pay-delivery.html">Доставка и оплата</a></li>
+						<li><a href="#">Скидки</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h2>Каталог</h2>
+					<ul>
+						<li><a href="#">Бумага</a></li>
+						<li><a href="#">Для офиса</a></li>
+						<li><a href="#">Письменные принадлежности</a></li>
+						<li><a href="#">Развивающие товары</a></li>
+						<li><a href="#">Товары для школы</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h2>Социальные сети</h2>
+					<ul>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Vk</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Youtube</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h2>Контакты</h2>
+					<ul>
+						<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+7 (861) 99-99-999</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@info.ru</a></li>
+						<li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>пн - сб (09:00 - 18:00)
+							</a></li>
+						<li><a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>Показать на карте</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="span">© Copyright 2019</div>
+		</div>
+	</footer>
+
+
+
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
