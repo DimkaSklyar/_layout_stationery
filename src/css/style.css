@@ -12338,11 +12338,29 @@ a:active {
 
 #order-form {
   text-align: left;
-  max-width: 40%;
+  max-width: 55%;
   padding: 15px;
   margin: 40px auto;
   position: relative;
   background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+  #order-form {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 991px) {
+  #order-form {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  #order-form {
+    max-width: 95%;
+  }
 }
 
 #order-form h1 {
