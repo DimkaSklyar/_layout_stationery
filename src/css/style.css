@@ -12739,6 +12739,14 @@ a:active {
   background: #ff2a2c;
 }
 
+.contacts-page .contacts-wrapper .consult .btn a {
+  display: block;
+}
+
+.hrefa {
+  padding: 15px 20px;
+}
+
 .catalog-btn {
   border: none;
   outline: 0 none;
