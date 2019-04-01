@@ -46,10 +46,10 @@
 					</div>
 					<div class="col-12 col-md-4 col-lg-3 flex-first flex-md-unordered d-flex d-md-block justify-content-center">
 						<div class="callback">
-							<a href="#form-callback" class="btn popup-with-form">Заказать звонок</a>
+							<a href="#form-callback" class="btn popup-with-form" id="call-me">Заказать звонок</a>
 
 							<form id="form-callback" class="mfp-hide white-popup-block form-dialog">
-								<h2>Заказать звонок</h2>
+								<h2 id="callback-header">Заказать звонок</h2>
 								<fieldset style="border:0;">
 									<p>Оставте ваш номер <br>мы вам перезвоним</p>
 									<ol>
@@ -141,7 +141,7 @@
 							<li class="name-page"><span>Меню</span></li>
 							<ul class="menu-mobile">
 								<li class="menu-item-mobile"><a href="index.html">Главная</a></li>
-								<li class="menu-item-mobile menu-with-cross"><a href="#" class="menu-with-submenu">Каталог</a></li>
+								<li class="menu-item-mobile menu-with-cross"><a href="catalog.html" class="menu-with-submenu">Каталог</a></li>
 								<ul class="submenu">
 									<li class="menu-item-mobile"><a href="#">Бумага</a></li>
 									<li class="menu-item-mobile"><a href="#">Товары для офиса</a></li>
@@ -149,7 +149,7 @@
 									<li class="menu-item-mobile"><a href="#">Развивающие товары</a></li>
 									<li class="menu-item-mobile"><a href="#">Товары для школы</a></li>
 								</ul>
-								<li class="menu-item-mobile"><a href="pay-delivery.html">Доставка и оплата</a></li>
+								<li class="menu-item-mobile"><a href="shipping-delivery.html">Доставка и оплата</a></li>
 								<li class="menu-item-mobile"><a href="sale.html">Скидки</a>
 								</li>
 								<li class="menu-item-mobile"><a href="about.html">О нас</a></li>
@@ -163,61 +163,33 @@
 	</header>
 
 	<main>
-		<section class="about-page">
+		<section class="contacts-page page">
 			<div class="container">
 				<div class="row no-gutters">
-					<h1>О нас</h1>
+					<h1>Контакты</h1>
 				</div>
 			</div>
-			<div class="container about-header d-md-block d-none">
-				<div class="row bcg-image no-gutters">
-					<div class="col-6 offset-md-6 col-lg-4 offset-lg-8 d-flex align-items-center">
-						<p>Компания OfficeShop обладает серьезным опытом работы с корпоративными клиентами. Поставки канцелярских
-							товаров и товаров для офиса — наше основное направление, качеству которого мы уделяем особое внимание.</p>
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg-7 col-12">
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A46503954a639ddf158babc40cecd2fc92ba3b58baa1a9928806c2a0d7dec337a&amp;source=constructor"
+							width="100%" height="464" frameborder="0"></iframe>
 					</div>
-				</div>
-			</div>
-			<div class="container-fluid about-description p-0">
-				<div class="container ">
-					<div class="row no-gutters">
-						<div class="col-12 col-lg-8 about-description-text">
-							<p>Мы сможем обеспечить Ваш офис или Ваше домашнее рабочее место всем необходимым, что в полной мере
-								обеспечит комфорт и порядок на рабочем месте. Ведь известно, что благоустроенность рабочего пространства
-								влияет на производительность и эмоциональное состояние. </p>
-							<p>Ассортимент нашей продукции превышает 25 000 наименований товаров, к тому же он постоянно пополняется.
-								У
-								нас Вы всегда найдете все необходимое для обеспечения бесперебойной работы Вашего офиса. </p>
-							<p>Мы предоставляем выбор товаров как эконом сегмента, так же и VIP-класса для рабочего пространства
-								любого
-								сотрудника Вашей компании – от менеджера до руководителя. При этом Вы можете все элементы подобрать в
-								едином стиле или цветовой гамме, это поможет подчеркнуть хороший вкус и аккуратность в организации
-								офисного интерьера.
-							</p>
-							<p>Универсальные аксессуары ненавязчиво впишутся как в интерьер современного производственного
-								предприятия,
-								и так и в домашний рабочий кабинет.
-							</p>
-							<p>Наш интернет-магазин работает без перерывов и выходных, поэтому совершить заказ Вы сможете абсолютно в
-								любое время. </p>
-							<p>Цены на товары OfficeShop всегда приятно радует наших клиентов. Мы старались сделать максимально
-								удобную
-								навигацию нашего интернет-магазина, чтобы регулярные акции, скидки и распродажи не ушли от Вашего
-								внимания. А бесплатная доставка будет приятным комплиментом для Вас. </p>
-							<p>Мы предлагаем специальные условия для постоянных партнеров, а так же весьма выгодные условия для
-								оптовых
-								покупателей. </p>
-							<p>Опытные сотрудники компании OfficeShop и Ваш персональный менеджер всегда ответят на интересующие
-								вопросы, помогут определиться с выбором и напомнят о проводимых акциях. </p>
-							<p>Став Вашим партнером в сфере поставки товаров для офиса мы неоднократно порадуем Вас душевными
-								презентами
-								и приятными бонусами. Вы ищете надежного поставщика товаров для Вашего офиса, мы будем рады видеть Вас в
-								числе наших клиентов.
-							</p>
-						</div>
-						<div class="col-lg-4 d-none d-lg-block">
-							<div class="count-product">
-								<span class="quality">> 25 000</span>
-								<p>наименований товаров</p>
+					<div class="col-lg-5 col-12 flex-first flex-lg-unordered">
+						<div class="contacts-wrapper">
+							<h3>Адрес офиса-склада</h3>
+							<ul>
+								<li>Россия, Краснодар, Тихорецкая улица, 26/1</li>
+								<li><a href="tel:+78619999999">+7 (861) 99-99-999</a></li>
+								<li>9:00 – 18:00</li>
+								<li><a href="mailto:info@info.ru">info@info.ru</a></li>
+							</ul>
+							<div class="consult">
+								<b>Персональные консультации</b>
+								<p>Если у вас остались вопросы —<br>
+									задайте их менеджеру</p>
+								<button class="btn"><a href="#form-callback" class="popup-with-form" id="consult">Получить консультацию</a></button>
 							</div>
 						</div>
 					</div>
@@ -233,7 +205,7 @@
 					<h2>Навигация</h2>
 					<ul>
 						<li><a href="index.html">Главная</a></li>
-						<li><a href="#">Каталог</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
 						<li><a href="pay-delivery.html">Доставка и оплата</a></li>
 						<li><a href="#">Скидки</a></li>
 						<li><a href="about.html">О нас</a></li>

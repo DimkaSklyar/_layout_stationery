@@ -97,7 +97,8 @@
                       </a>
                       <a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Имя
                         товара</a>
-                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse
+                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam esse
                         voluptates fugit aliquam, repudiandae, soluta et, eum nemo suscipit facilis accusantium magni
                         labore. Perspiciatis nemo vitae in saepe totam magni.</p>
                       <span class="old-price">100.00 &#8381;</span>
@@ -111,7 +112,8 @@
                       </a>
                       <a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Имя
                         товара</a>
-                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse
+                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam esse
                         voluptates fugit aliquam, repudiandae, soluta et, eum nemo suscipit facilis accusantium magni
                         labore. Perspiciatis nemo vitae in saepe totam magni.</p>
                       <span class="old-price">100.00 &#8381;</span>
@@ -125,7 +127,8 @@
                       </a>
                       <a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Имя
                         товара</a>
-                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse
+                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam esse
                         voluptates fugit aliquam, repudiandae, soluta et, eum nemo suscipit facilis accusantium magni
                         labore. Perspiciatis nemo vitae in saepe totam magni.</p>
                       <span class="old-price">100.00 &#8381;</span>
@@ -139,7 +142,8 @@
                       </a>
                       <a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Имя
                         товара</a>
-                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse
+                      <p class="d-none product-description-sale">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quisquam esse
                         voluptates fugit aliquam, repudiandae, soluta et, eum nemo suscipit facilis accusantium magni
                         labore. Perspiciatis nemo vitae in saepe totam magni.</p>
                       <span class="old-price">100.00 &#8381;</span>
@@ -448,7 +452,8 @@
       <div class="container">
         <div class="section-header-wrap">
           <h2>Товары для офиса:</h2>
-          <a href="catalog.html" class="menu-with-submenu category-href btn d-none d-sm-block" id="office">В каталог товаров</a>
+          <a href="catalog.html" class="menu-with-submenu category-href btn d-none d-sm-block" id="office">В каталог
+            товаров</a>
         </div>
         <div class="products-innner">
           <div class="products-wrapper">
@@ -542,7 +547,8 @@
       <div class="container">
         <div class="section-header-wrap">
           <h2>Бумага:</h2>
-          <a href="catalog.html" class="menu-with-submenu category-href btn d-none d-sm-block" id="peppers">В каталог товаров</a>
+          <a href="catalog.html" class="menu-with-submenu category-href btn d-none d-sm-block" id="peppers">В каталог
+            товаров</a>
         </div>
         <div class="products-innner">
           <div class="products-wrapper">
@@ -670,7 +676,7 @@
                 <span id="product-form-price" class="price">100</span><span class="rub"> &#8381;</span>
               </div>
               <div class="wrap-btn">
-                <button class="btn popup-order" href="#order-form">Заказать</button>
+                <button class="btn popup-order" href="#order-form">Оформить заказ</button>
               </div>
             </div>
           </div>
@@ -699,7 +705,7 @@
                 <span id="product-form-sale-price" class="price">100</span><span class="rub"> &#8381;</span>
               </div>
               <div class="wrap-btn">
-                <button class="btn popup-order" href="#order-form">Заказать</button>
+                <button class="btn popup-order" href="#order-form" id="sale-order">Оформить заказ</button>
               </div>
             </div>
           </div>
@@ -707,32 +713,50 @@
       </div>
     </div>
 
-<!-- order-form -->
+    <!-- order-form -->
 
-<form id="order-form" class="mfp-hide white-popup-block">
-	<h1>Form</h1>
-	<fieldset style="border:0;">
-		<p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
-		<ol>
-			<li>
-				<label for="name">Name</label>
-				<input id="name" name="name" type="text" placeholder="Name" required="">
-			</li>
-			<li>
-				<label for="email">Email</label>
-				<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
-			</li>
-			<li>
-				<label for="phone">Phone</label>
-				<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
-			</li>
-			<li>
-				<label for="textarea">Textarea</label><br>
-				<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
-			</li>
-		</ol>
-	</fieldset>
-</form>
+    <form id="order-form" class="mfp-hide white-popup-block">
+      <h1>Ваш заказ</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <figure>
+              <img src="img/product1.png" alt="" id="img-order">
+            </figure>
+            <p>Количество товара: <span class="count-order" id="count-order-show">2</span><span> шт.</span></p>
+            <p>Сумма заказа: <span class="quality" id="quality-order-show">2000</span><span class="rub"> &#8381;</span>
+            </p>
+          </div>
+          <div class="col-6">
+            <fieldset style="border:0;">
+              <ol>
+                <li>
+                  <input id="name" name="name" type="text" placeholder="Имя" required="">
+                </li>
+                <li>
+                  <input id="email" name="email" type="e-mail" placeholder="e-mail" required="">
+                </li>
+                <li>
+                  <input id="phone" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+                </li>
+                <li>
+                  <label for="textarea">Комментарий к заказу</label><br>
+                  <textarea id="textarea" name="comment"></textarea>
+                </li>
+              </ol>
+              <input id="name-order" type="text" name="name-order" hidden>
+              <input id="price-order" type="text" name="price-order" hidden>
+              <input id="count-order" type="text" name="count-order" hidden>
+              <input id="quality-order" type="text" name="quality-order" hidden>
+            </fieldset>
+            <div id="messegeResult-order">
+              <button id="submit-form-z" type="submit" form="order-form" class="btn">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
   </main>
 
   <footer class="page-footer">

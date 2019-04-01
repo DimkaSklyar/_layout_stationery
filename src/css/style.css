@@ -12158,8 +12158,7 @@ a:active {
 }
 
 #product-dialog,
-#product-dialog-sale,
-#order-form {
+#product-dialog-sale {
   text-align: left;
   max-width: 60%;
   padding: 15px;
@@ -12170,37 +12169,32 @@ a:active {
 
 @media (max-width: 1199px) {
   #product-dialog,
-    #product-dialog-sale,
-    #order-form {
+    #product-dialog-sale {
     max-width: 75%;
   }
 }
 
 @media (max-width: 991px) {
   #product-dialog,
-    #product-dialog-sale,
-    #order-form {
+    #product-dialog-sale {
     max-width: 85%;
   }
 }
 
 @media (max-width: 767px) {
   #product-dialog,
-    #product-dialog-sale,
-    #order-form {
+    #product-dialog-sale {
     max-width: 95%;
   }
 }
 
 #product-dialog figure img,
-  #product-dialog-sale figure img,
-  #order-form figure img {
+  #product-dialog-sale figure img {
   width: 100%;
 }
 
 #product-dialog h2,
-  #product-dialog-sale h2,
-  #order-form h2 {
+  #product-dialog-sale h2 {
   text-transform: uppercase;
   font-size: 2.5em;
   line-height: 1.3;
@@ -12208,16 +12202,14 @@ a:active {
 
 @media (max-width: 1199px) {
   #product-dialog h2,
-      #product-dialog-sale h2,
-      #order-form h2 {
+      #product-dialog-sale h2 {
     font-size: 2em;
   }
 }
 
 @media (max-width: 991px) {
   #product-dialog h2,
-      #product-dialog-sale h2,
-      #order-form h2 {
+      #product-dialog-sale h2 {
     font-size: 1.7em;
   }
 }
@@ -12225,9 +12217,7 @@ a:active {
 #product-dialog .price,
   #product-dialog .rub,
   #product-dialog-sale .price,
-  #product-dialog-sale .rub,
-  #order-form .price,
-  #order-form .rub {
+  #product-dialog-sale .rub {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
@@ -12235,39 +12225,35 @@ a:active {
 }
 
 #product-dialog button.btn,
-  #product-dialog-sale button.btn,
-  #order-form button.btn {
+  #product-dialog-sale button.btn {
   border: none;
   background-color: #f93637;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  padding: 20px 50px;
-  font-size: 1.6em;
+  padding: 10px 30px;
+  font-size: 1.4em;
   cursor: pointer;
   margin-top: 30px;
 }
 
 @media (max-width: 1199px) {
   #product-dialog button.btn,
-      #product-dialog-sale button.btn,
-      #order-form button.btn {
+      #product-dialog-sale button.btn {
     font-size: 1.3em;
   }
 }
 
 @media (max-width: 991px) {
   #product-dialog button.btn,
-      #product-dialog-sale button.btn,
-      #order-form button.btn {
+      #product-dialog-sale button.btn {
     padding: 10px 30px;
   }
 }
 
 #product-dialog .count,
-  #product-dialog-sale .count,
-  #order-form .count {
+  #product-dialog-sale .count {
   border: 1px solid #000000;
   border-radius: 20px;
   margin-right: 40px;
@@ -12275,16 +12261,14 @@ a:active {
 
 @media (max-width: 767px) {
   #product-dialog .count,
-      #product-dialog-sale .count,
-      #order-form .count {
+      #product-dialog-sale .count {
     width: fit-content;
     margin: 0 auto;
   }
 }
 
 #product-dialog .count .quality,
-    #product-dialog-sale .count .quality,
-    #order-form .count .quality {
+    #product-dialog-sale .count .quality {
   padding: 10px 15px;
   line-height: 1;
   cursor: pointer;
@@ -12292,8 +12276,7 @@ a:active {
 }
 
 #product-dialog .count #count-product,
-    #product-dialog-sale .count #count-product,
-    #order-form .count #count-product {
+    #product-dialog-sale .count #count-product {
   max-height: 45px;
   width: 45px;
   padding: 10px 10px 9px 15px;
@@ -12304,21 +12287,18 @@ a:active {
 }
 
 #product-dialog .count #count-product:focus,
-      #product-dialog-sale .count #count-product:focus,
-      #order-form .count #count-product:focus {
+      #product-dialog-sale .count #count-product:focus {
   outline: none 0;
 }
 
 #product-dialog .count #count-product::-webkit-inner-spin-button,
-      #product-dialog-sale .count #count-product::-webkit-inner-spin-button,
-      #order-form .count #count-product::-webkit-inner-spin-button {
+      #product-dialog-sale .count #count-product::-webkit-inner-spin-button {
   display: none;
 }
 
 @media (max-width: 767px) {
   #product-dialog .product-price-quality,
-    #product-dialog-sale .product-price-quality,
-    #order-form .product-price-quality {
+    #product-dialog-sale .product-price-quality {
     display: block !important;
     text-align: center;
   }
@@ -12326,8 +12306,7 @@ a:active {
 
 @media (max-width: 767px) {
   #product-dialog .wrap-btn,
-    #product-dialog-sale .wrap-btn,
-    #order-form .wrap-btn {
+    #product-dialog-sale .wrap-btn {
     text-align: center;
   }
 }
@@ -12355,6 +12334,85 @@ a:active {
 
 .products .owl-dots .owl-dot.active {
   background-color: #da6d6e !important;
+}
+
+#order-form {
+  text-align: left;
+  max-width: 40%;
+  padding: 15px;
+  margin: 40px auto;
+  position: relative;
+  background-color: #fff;
+}
+
+#order-form h1 {
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+#order-form figure {
+  max-width: 300px;
+}
+
+#order-form figure img {
+  width: 100%;
+}
+
+#order-form ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#order-form ol li {
+  position: relative;
+  margin-top: 15px;
+}
+
+#order-form input,
+  #order-form textarea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  outline: 0 none;
+  border: 1px solid #aeaeae;
+  font-family: "Roboto Slab",sans-serif;
+}
+
+#order-form p {
+  font-size: 1.2em;
+}
+
+#order-form p span {
+  color: #f93637;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#order-form button.btn {
+  border: none;
+  background-color: #f93637;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px 30px;
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+@media (max-width: 1199px) {
+  #order-form button.btn {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 991px) {
+  #order-form button.btn {
+    padding: 10px 30px;
+  }
 }
 
 .page,
