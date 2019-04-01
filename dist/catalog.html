@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Document</title>
+	<title>Главная - 22 Карандаша</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -27,7 +28,8 @@
 							<a href="#time"><i class="fa fa-clock-o" aria-hidden="true"></i>пн - сб (09:00 - 18:00)</a>
 							<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A46503954a639ddf158babc40cecd2fc92ba3b58baa1a9928806c2a0d7dec337a&amp;source=constructor"
 								class="popup-with-zoom-anim popup-gmaps"><i class="fa fa-location-arrow" aria-hidden="true"></i>Показать
-								на карте</a>
+								на
+								карте</a>
 						</div>
 					</div>
 				</div>
@@ -45,10 +47,10 @@
 					</div>
 					<div class="col-12 col-md-4 col-lg-3 flex-first flex-md-unordered d-flex d-md-block justify-content-center">
 						<div class="callback">
-							<a href="#form-callback" class="btn popup-with-form" id="call-me">Заказать звонок</a>
+							<a href="#form-callback" class="btn popup-with-form">Заказать звонок</a>
 
 							<form id="form-callback" class="mfp-hide white-popup-block form-dialog">
-								<h2 id="callback-header">Заказать звонок</h2>
+								<h2>Заказать звонок</h2>
 								<fieldset style="border:0;">
 									<p>Оставте ваш номер <br>мы вам перезвоним</p>
 									<ol>
@@ -60,7 +62,7 @@
 										</li>
 									</ol>
 								</fieldset>
-								<div id="messegeResult-order">
+								<div id="messegeResult-callback">
 									<button id="submit-form-z" type="submit" form="form-callback" class="btn">Отправить</button>
 								</div>
 							</form>
@@ -73,60 +75,90 @@
 						<ul>
 							<li><a href="index.html">Главная</a></li>
 							<li class="decor-cross menu-item">
-								<a href="about.html" class="menu-with-submenu">Каталог</a>
+								<a href="catalog.html" class="menu-with-submenu category-href" id="all">Каталог</a>
 								<ul class="submenu">
-									<li><a href="#">Бумага</a></li>
-									<li><a href="#">Товары для офиса</a></li>
-									<li><a href="#">Письменные принадлежности</a></li>
-									<li><a href="#">Развивающие товары</a></li>
-									<li><a href="#">Товары для школы</a></li>
+									<li><a class="category-href" href="catalog.html" id="peppers">Бумага</a></li>
+									<li><a class="category-href" href="catalog.html" id="office">Товары для офиса</a>
+									</li>
+									<li><a class="category-href" href="catalog.html" id="writing">Письменные
+											принадлежности</a></li>
+									<li><a class="category-href" href="catalog.html" id="development">Развивающие
+											товары</a></li>
+									<li><a class="category-href" href="catalog.html" id="school">Товары для школы</a>
+									</li>
 								</ul>
 							</li>
-							<li class="decor-cross menu-item"><a href="pay-delivery.html">Доставка и оплата</a>
-							</li>
+							<li class="decor-cross menu-item"><a href="pay-delivery.html">Доставка и оплата</a></li>
 							<li class="menu-item remove-position">
 								<div class="decor-cross wrap-a">
-									<a href="sale.html" class="menu-with-submenu">Скидки</a>
+									<a href="catalog.html" class="menu-with-submenu category-href" id="sale">Скидки</a>
 								</div>
-								<ul class="submenu submenu-sale" style="display: none">
-									<li class="col">
+								<ul class="submenu submenu-sale row" style="display: none">
+									<li class="col-3">
 										<div class="submenu-sale-wrapper">
-											<a href="#">
-												<figure><img src="img/product1.png" alt=""></figure>
+											<a href="#product-dialog-sale" class="popup-with-zoom-anim">
+												<figure><img src="img/product/p1.jpg" alt=""></figure>
 											</a>
-											<a href="#" class="name-product">Имя товара</a>
-											<span class="old-price">&#8381;100.00</span>
-											<span class="price">&#8381;100</span>
+											<a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Линейка
+												50 см Attache</a>
+											<p class="d-none product-description-sale">50-сантиметровая линейка Attache
+												выполнена из
+												полистирола. Удобная в использовании линейка с четкой разметкой,
+												высокого качества.
+												Флуоресцентные цвета: желтый, малиновый, оранжевый, зеленый.</p>
+											<span class="old-price">73.00 &#8381;</span>
+											<span class="price">65.00 </span><span>&#8381;</span>
 										</div>
 									</li>
-									<li class="col">
+									<li class="col-3">
 										<div class="submenu-sale-wrapper">
-											<a href="#">
-												<figure><img src="img/product2.png" alt=""></figure>
+											<a href="#product-dialog-sale" class="popup-with-zoom-anim">
+												<figure><img src="img/product/p2.jpg" alt=""></figure>
 											</a>
-											<a href="#" class="name-product">Имя товара</a>
-											<span class="old-price">&#8381;100.00</span>
-											<span class="price">&#8381;100</span>
+											<a href="#product-dialog-sale"
+												class="name-product popup-with-zoom-anim product-name-sale">Корректирующая
+												ручка 8мл KORES
+												Preсiso</a>
+											<p class="d-none product-description-sale">Корректирующий карандаш Kores
+												Preciso, предназначен для
+												точечных исправлений текста на любых видах бумаги. Объем флакона - 8 мл.
+												Металлический шариковый
+												наконечник позволяет наносить линии толщиной 0,9 мм. Прозрачный колпачок
+												с клипом защищает от
+												высыхания.</p>
+											<span class="old-price">99.00 &#8381;</span>
+											<span class="price">59.00 </span><span>&#8381;</span>
 										</div>
 									</li>
-									<li class="col">
+									<li class="col-3">
 										<div class="submenu-sale-wrapper">
-											<a href="#">
-												<figure><img src="img/product3.png" alt=""></figure>
+											<a href="#product-dialog-sale" class="popup-with-zoom-anim">
+												<figure><img src="img/product/p3.jpg" alt=""></figure>
 											</a>
-											<a href="#" class="name-product">Имя товара</a>
-											<span class="old-price">&#8381;100.00</span>
-											<span class="price">&#8381;100</span>
+											<a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Маркер
+												перманентный ICO TOP B черный 3мм</a>
+											<p class="d-none product-description-sale">Маркер для письма на любых
+												поверхностях. Чернила на
+												спиртовой основе. Круглый наконечник. Толщина линии 3 мм. Цвет-черный.
+											</p>
+											<span class="old-price">82.00 &#8381;</span>
+											<span class="price">49.00 </span><span>&#8381;</span>
 										</div>
 									</li>
-									<li class="col">
+									<li class="col-3">
 										<div class="submenu-sale-wrapper">
-											<a href="#">
-												<figure><img src="img/product4.png" alt=""></figure>
+											<a href="#product-dialog-sale" class="popup-with-zoom-anim">
+												<figure><img src="img/product/p4.jpg" alt=""></figure>
 											</a>
-											<a href="#" class="name-product">Имя товара</a>
-											<span class="old-price">&#8381;100.00</span>
-											<span class="price">&#8381;100</span>
+											<a href="#product-dialog-sale" class="name-product popup-with-zoom-anim product-name-sale">Набор
+												маркеров EDDING E-330/4S 4 шт/уп 1-5мм</a>
+											<p class="d-none product-description-sale">Маркер перманентный.
+												Светостойкие, быстросохнущие
+												чернила на спиртовой основе. Пластиковый корпус. Скошенный наконечник.
+												Толщина письма 1 - 5мм.
+												Цвета: синий, черный, зеленый, красный. Производство - Германия</p>
+											<span class="old-price">347.00 &#8381;</span>
+											<span class="price">259.00 </span><span>&#8381;</span>
 										</div>
 									</li>
 								</ul>
@@ -135,21 +167,28 @@
 							<li class="decor-cross menu-item"><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</div>
+
 					<div class="nav-mobile d-block d-lg-none col-12">
 						<ul class="nav-mobile-name-page">
 							<li class="name-page"><span>Меню</span></li>
 							<ul class="menu-mobile">
 								<li class="menu-item-mobile"><a href="index.html">Главная</a></li>
-								<li class="menu-item-mobile menu-with-cross"><a href="#" class="menu-with-submenu">Каталог</a></li>
+								<li class="menu-item-mobile menu-with-cross"><a href="catalog.html"
+										class="menu-with-submenu category-href" id="all">Каталог</a>
+								</li>
 								<ul class="submenu">
-									<li class="menu-item-mobile"><a href="#">Бумага</a></li>
-									<li class="menu-item-mobile"><a href="#">Товары для офиса</a></li>
-									<li class="menu-item-mobile"><a href="#">Письменные принадлежности</a></li>
-									<li class="menu-item-mobile"><a href="#">Развивающие товары</a></li>
-									<li class="menu-item-mobile"><a href="#">Товары для школы</a></li>
+									<li class="menu-item-mobile"><a class="category-href" href="catalog.html" id="peppers">Бумага</a></li>
+									<li class="menu-item-mobile"><a class="category-href" href="catalog.html" id="office">Товары для
+											офиса</a></li>
+									<li class="menu-item-mobile"><a class="category-href" href="catalog.html" id="writing">Письменные
+											принадлежности</a></li>
+									<li class="menu-item-mobile"><a class="category-href" href="catalog.html" id="development">Развивающие
+											товары</a></li>
+									<li class="menu-item-mobile"><a class="category-href" href="catalog.html" id="school">Товары для
+											школы</a></li>
 								</ul>
-								<li class="menu-item-mobile"><a href="shipping-delivery.html">Доставка и оплата</a></li>
-								<li class="menu-item-mobile"><a href="sale.html">Скидки</a>
+								<li class="menu-item-mobile"><a href="pay-delivery.html">Доставка и оплата</a></li>
+								<li class="menu-item-mobile"><a href="catalog.html" id="sale" class="category-href">Скидки</a>
 								</li>
 								<li class="menu-item-mobile"><a href="about.html">О нас</a></li>
 								<li class="menu-item-mobile"><a href="contacts.html">Контакты</a></li>
@@ -169,138 +208,546 @@
 					<div class="col-xl-3 col-lg-4">
 						<h2>Категории</h2>
 						<ul class="category d-flex d-lg-block">
-							<li><button id="all" class="catalog-btn" type="button" data-filter="all">Все</button></li>
-							<li><button id="peppers" class="catalog-btn catalog-category" type="button" data-filter=".peppers">Бумага</button></li>
-							<li><button id="office" class="catalog-btn catalog-category" type="button" data-filter=".office">Товары для
-									офиса</button></li>
-							<li><button id="writing" class="catalog-btn catalog-category" type="button" data-filter=".writing">Письменные
-									принадлежности</button></li>
-							<li><button id="development" class="catalog-btn catalog-category" type="button" data-filter=".development">Развивающие
-									товары</button></li>
-							<li><button id="school" class="catalog-btn catalog-category" type="button" data-filter=".school">Товары для
-									школы</button></li>
-							<li><button id="sale" class="catalog-btn catalog-category catalog-btn-sale" type="button" data-filter=".sale">Скидки
-									и предложения</button></li>
+							<li><button id="allMix" class="catalog-btn catalog-h-all" type="button" data-filter="all">Все</button></li>
+							<li><button id="peppersMix" class="catalog-btn catalog-h catalog-category" type="button" data-filter=".peppers">Бумага</button></li>
+							<li><button id="officeMix" class="catalog-btn catalog-h catalog-category" type="button" data-filter=".office">Товары для офиса</button></li>
+							<li><button id="writingMix" class="catalog-btn catalog-h catalog-category" type="button" data-filter=".writing">Письменные принадлежности</button></li>
+							<li><button id="developmentMix" class="catalog-btn catalog-h catalog-category" type="button" data-filter=".development">Развивающие товары</button></li>
+							<li><button id="schoolMix" class="catalog-btn catalog-h catalog-category" type="button" data-filter=".school">Товары для школы</button></li>
+							<li><button id="saleMix" class="catalog-btn catalog-h catalog-category catalog-btn-sale" type="button" data-filter=".sale">Скидки и предложения</button></li>
 						</ul>
 					</div>
 					<div class="col-xl-9 col-lg-8">
-						<h2>Продукция</h2>
+						<h2 id="catalog-h">Продукция</h2>
 						<div class="sort-category-wrapper">
 							<div class="sort-category-pepper" style="display: none;">
-								<button class="catalog-btn" type="button" data-toggle=".category-a">Бумага для заметок</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-b">Бумага для офисной техники</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Бухгалтерские книги и
-									бланки</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Почтовые конверты и пакеты</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Ролики и чековая лента</button>
+								<button class="catalog-btn" type="button" data-filter=".peppers-z">Бумага для заметок</button>
+								<button class="catalog-btn" type="button" data-filter=".peppers-o">Бумага для офисной техники</button>
+								<button class="catalog-btn" type="button" data-filter=".peppers-b">Бухгалтерские книги и бланки</button>
+								<button class="catalog-btn" type="button" data-filter=".peppers-p">Почтовые конверты и пакеты</button>
+								<button class="catalog-btn" type="button" data-filter=".peppers-r">Ролики и чековая лента</button>
 							</div>
 							<div class="sort-category-office" style="display: none;">
-								<button class="catalog-btn" type="button" data-toggle=".category-a">Дыроколы</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-b">Клей</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Офисные ножницы и ножи</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Скобы для степлеров</button>
+								<button class="catalog-btn" type="button" data-filter=".office-d">Дыроколы</button>
+								<button class="catalog-btn" type="button" data-filter=".office-k">Клей</button>
+								<button class="catalog-btn" type="button" data-filter=".office-o">Офисные ножницы и ножи</button>
+								<button class="catalog-btn" type="button" data-filter=".office-s">Скобы для степлеров</button>
 							</div>
 							<div class="sort-category-writing" style="display: none;">
-								<button class="catalog-btn" type="button" data-toggle=".category-a">Линейки</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-b">Корректирующие средства</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Маркеры и текстовыделители</button>
+								<button class="catalog-btn" type="button" data-filter=".writing-l">Линейки</button>
+								<button class="catalog-btn" type="button" data-filter=".writing-k">Корректирующие средства</button>
+								<button class="catalog-btn" type="button" data-filter=".writing-m">Маркеры и текстовыделители</button>
 							</div>
 							<div class="sort-category-development" style="display: none;">
-								<button class="catalog-btn" type="button" data-toggle=".category-a">Мел</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-b">Наборы для творчества</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Пластилин, доски для лепки</button>
+								<button class="catalog-btn" type="button" data-filter=".development-m">Мел</button>
+								<button class="catalog-btn" type="button" data-filter=".development-n">Наборы для творчества</button>
+								<button class="catalog-btn" type="button" data-filter=".development-p">Пластилин, доски для лепки</button>
 							</div>
 							<div class="sort-category-school" style="display: none;">
-								<button class="catalog-btn" type="button" data-toggle=".category-a">Цветная бумага</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-b">Тетради</button>
-								<button class="catalog-btn" type="button" data-toggle=".category-c">Фломастеры, карандаши</button>
+								<button class="catalog-btn" type="button" data-filter=".school-с">Цветная бумага</button>
+								<button class="catalog-btn" type="button" data-filter=".school-t">Тетради</button>
+								<button class="catalog-btn" type="button" data-filter=".school-f">Фломастеры, карандаши</button>
 							</div>
 						</div>
 						<div class="sort-category-all">
 							<span>Сортировать по:</span>
-								<select name="sorting" id="sorting" class="select-sort">
-									<option value="order:default">По умолчанию</option>
-									<option value="order:asc">Цена: по возростанию</option>
-									<option value="order:desc">Цена: по убыванию</option>
-								</select>
+							<select name="sorting" id="sorting" class="select-sort">
+								<option value="order:default">По умолчанию</option>
+								<option value="order:asc">Цена: по возростанию</option>
+								<option value="order:desc">Цена: по убыванию</option>
+							</select>
 						</div>
 						<div class="catalog-container products row">
-							<div class="col-md-4 col-sm-6 mix peppers" data-order="1">
-								<div class="product-item">
-									<figure>
-										<img src="img/product1.png" alt="">
-										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
-									</figure>
-									<div class="product-inner">
-										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
-										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
-											provident et at dolorum sint, blanditiis saepe id commodi?</p>
-										<span class="old-price">&#8381;100.00</span>
-										<span class="price">100.00</span><span>&#8381;</span>
-									</div>
-								</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-r" data-order="196">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p16.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Ролики для принтеров 420мм
+													(диам.70,вт.18) 12шт./уп.</a>
+												<p class="product-description">Ролики для печати на принтерах, имеющих соответствующий механизм
+													подачи бумаги, изготавливают из офсетной бумаги белизной 95%, плотностью 65гм2. Первая цифра в
+													названии товара обозначает ширину ролика в мм., вторая соответствует диаметру намотки в мм. или
+													длине бумаги в метрах, третья цифра - внутренний диаметр втулки (как правило он равен 18мм).</p>
+												<span class="price">196.00</span><span> &#8381;</span>
+											</div>
+										</div>
 							</div>
-							<div class="col-md-4 col-sm-6  mix">
-								<div class="product-item">
-									<figure>
-										<img src="img/product2.png" alt="">
-										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
-									</figure>
-									<div class="product-inner">
-										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
-										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
-											provident et at dolorum sint, blanditiis saepe id commodi?</p>
-										<span class="old-price">&#8381;100.00</span>
-										<span class="price">100.00</span><span>&#8381;</span>
-									</div>
-								</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-r"  data-order="213">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p17.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Ролики для факсов 210мм
+													(дл.30м,вт.12,FAX СТАНДАРТ) 24шт./уп.</a>
+												<p class="product-description">Ролики для аппаратов факсимильной связи, использующих в качестве
+													носителя информации термобумагу. Первая цифра в названии товара обозначает ширину ролика в мм.,
+													вторая соответствует диаметру намотки мм или длине намотки в метрах, третья цифра - внутренний
+													диаметр втулки (как правило он равен 12мм). Изготавливаются из термобумаги плотностью 55гм2,
+													произведенной ведущими европейскими производителями (JTK Финляндия)</p>
+												<span class="price">213.00</span><span> &#8381;</span>
+											</div>
+										</div>
 							</div>
-							<div class="col-md-4 col-sm-6 mix peppers" data-order="3">
-								<div class="product-item">
-									<figure>
-										<img src="img/product3.png" alt="">
-										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
-									</figure>
-									<div class="product-inner">
-										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
-										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
-											provident et at dolorum sint, blanditiis saepe id commodi?</p>
-										<span class="price">100.00</span><span>&#8381;</span>
-									</div>
-								</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-p" data-order="182">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p18.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Конверты Белый E65стрип пр.окно
+													BusinessPost 110х220 50шт/уп/1961</a>
+												<p class="product-description">Конверт E65 110х220 мм выполнен из офсета 90 г/м2, имеет клеевое
+													нанесение типа стрип (отрывная силиконовая лента) и правое окно.Размер окна 90х45 мм. Предназначен
+													для почтовых отправлений различной документации, писем и т.п. Упакован в пленку по 50 штук.Срок
+													годности 1 год по ГОСТ.</p>
+												<span class="price">182.00</span><span>&#8381;</span>
+											</div>
+										</div>
 							</div>
-							<div class="col-md-4 col-sm-6  mix">
-								<div class="product-item">
-									<figure>
-										<img src="img/product5.png" alt="">
-										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
-									</figure>
-									<div class="product-inner">
-										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
-										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
-											provident et at dolorum sint, blanditiis saepe id commodi?</p>
-										<span class="price">100.00</span><span>&#8381;</span>
-									</div>
-								</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-o" data-order="3696">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p19.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Бумага для цв.лазер.печ. XEROX
+													COLOTECH PLUS (А3,220г,170CIE%) пачка 250л.</a>
+												<p class="product-description">Бумага Xerox Colotech+, предназначенная для полноцветной печати на
+													лазерных принтерах. Высокая плотность, составляющая 220 г/кв.м, обеспечивает устойчивость к
+													нагреву и исключает просвечивание изображения. Матовые листы с улучшенным показателем белизны
+													(170% по стандарту CIE)</p>
+												<span class="price">3696.00</span><span> &#8381;</span>
+											</div>
+										</div>
 							</div>
-							<div class="col-md-4 col-sm-6  mix">
-								<div class="product-item">
-									<figure>
-										<img src="img/product6.png" alt="">
-										<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
-									</figure>
-									<div class="product-inner">
-										<a href="#product-dialog" class="name-product popup-with-zoom-anim">2-hole punch 0102</a>
-										<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-											doloremque pariatur reprehenderit velit nisi natus maiores hic, consequuntur nam deleniti magnam
-											provident et at dolorum sint, blanditiis saepe id commodi?</p>
-										<span class="price">100.00</span><span>&#8381;</span>
-									</div>
-								</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-z" data-order="62">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p20.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Блок-кубик Attache Selection с
+													клеев. краем 76х76, неон, фиолет. 100л</a>
+												<p class="product-description">Стикеры Attache Selection состоит из 100 листов. Бумага для заметок
+													размером 76x76 мм неонового фиолетового цвета, скрепленных клеевым краем. Плотность бумаги: 75-80
+													г/кв.м. клейкий слой - 22 Н/м. Особых условий хранения не требует, сертификации не подлежит, срок
+													годности не ограничен. </p>
+												<span class="price">62.00</span><span>&#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-z" data-order="97">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p5.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Блок для записей в подставке
+													ATTACHE 9х9х5 белый блок</a>
+												<p class="product-description">Блок: высококачественный офсет. Плотность 80-100 г/м2, белизна
+													92-100%. Размер листов (ШхДхВ): 90х90х50 мм Прозрачный пластиковый бокс. Блок-кубик упакован в
+													термоусадочную пленку.</p>
+												<span class="price">97.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-z" data-order="214">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p6.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Блок для записей в подставке
+													ATTACHE 9х9х9 цветной блок</a>
+												<p class="product-description">Блок: высококачественный офсет. Плотность 80-100г/м2. Размер изделия
+													(ШхДхВ): 90х90х90 мм Прозрачный пластиковый бокс. Блок-кубик упакован в термоусадочную пленку.</p>
+												<span class="price">214.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-o" data-order="2587">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p7.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Бумага широкоформатная MEGA
+													Engineer (А0+)</a>
+												<p class="product-description">Широкоформатная бумага MEGA Engineer, предназначенная для печати
+													технической документации, монохромных материалов ГИС и САПР, инженерной и деловой графики.
+													Используется на широкоформатных ксерографических инженерных системах Xerox, KIP, Seiko, OCE,
+													Riсoh, Kyocera Mitа. Бумажное полотно высокой степени белизны имеет формат A0+ (914 мм). </p>
+												<span class="price">2587.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-b sale" data-order="59">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p8.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Бух книги канц.облож.картон
+													(линейка) 48л. блок офсет</a>
+												<p class="product-description">Формат А4. Обложка: картон Блок: офсет 65г/м2, скрепка. 48 листов,
+													линейка.</p>
+												<span class="old-price">69.00 &#8381;</span>
+												<span class="price">59.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix peppers peppers-p" data-order="214">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p9.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Пакет Для сопр.док из прозр. п/э
+													240x160+15 стрип DocuFIX 250шт/уп</a>
+												<p class="product-description">Прозрачный полиэтиленовый карман (пакет) для наклеивания на коробки
+													DocuFIX (240х160+15) 250 шт/кор Размер 240х160мм клапан 15 мм Предназначен для вложения в него
+													сопроводительной документации, счетов-фактур, отгрузочных накладных и других сопроводительных
+													документов. Имеет силиконовую защитную подложку для быстрого и легкого наклеивания на коробки,
+													палеты и пр. Клапан также имеет отрывную силиконовую ленту. </p>
+												<span class="price">2009.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix office office-d sale" data-order="314">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p10.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Дырокол ATTACHE WD204 до 16л.,
+													металл., черный</a>
+												<p class="product-description">Материал корпуса дырокола: металл/пластик.Пробивает
+													одновременно два отверстия.Диаметр отверстия 5,5 мм.Расстояние между отверстиями 80
+													мм.<br />Встроенная линейка отсутствует.</p>
+												<span class="old-price">351.00 &#8381;</span>
+												<span class="price">314.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix office office-d" data-order="5559">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p11.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Дырокол REXEL P265 до 65 листов
+													черный Германия</a>
+												<p class="product-description">Металлический дырокол профессионального класса с усиленной литой
+													конструкцией Пробивает до 65 листов. Класс - профессиональный. Дополнительно усиленная литая
+													металлическая конструкция для интенсивной работы. Пробивает 2 отверстия диаметром по 5 мм.
+													Расстояние между отверстиями 75 мм. </p>
+												<span class="price">5559.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix office office-d" data-order="468">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p12.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Дырокол ATTACHE 6730 до 30л.,
+													металл.,с лин.,с рез.вставкой,серебр.</a>
+												<p class="product-description">полностью металлический дырокол серебристого цвета максимальная
+													толщина пробиваемой бумаги - 30 листов пробивает два отверстия диаметром 5,5 мм расстояние между
+													отверстиями 80 мм линейка деления на форматы: А4, А6, А8 и 888 удобный контейнер для конфетти
+													наличие системы блокировки в закрытом виде, что позволяет экономить рабочее пространство </p>
+												<span class="price">468.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix office office-k" data-order="64">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p13.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Клей-карандаш 20г ATTACHE</a>
+												<p class="product-description">Клей-карандаш Attache предназначен для склеивания картона, бумаги,
+													текстиля для бумаги. Вес - 20 г. Не содержит цветовых пигментов (бесцветный). Изготовлен из
+													нетоксичного вещества с увлажняющим глицерином. Имеет большой срок хранения. Без запаха. </p>
+												<span class="price">64.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix office office-o" data-order="618">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p14.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Ножницы Attache selection 3D,
+													210 мм, покрытие Titanium coffe</a>
+												<p class="product-description">Ножницы Attache selection 3D изготовлены из высококачественной
+													нержавеющей стали. Покрытие Titanium Coffe. Длина 210 мм. Толщина стали 2,5 мм. Эргономичные ручки
+													Цвет ручек - Coffe. </p>
+												<span class="price">618.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix office office-s" data-order="289">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p15.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Скобы к степлеру N23/20
+													ATTACHE</a>
+												<p class="product-description">Скобы для степлера № 23/20 Attache предназначены для степлеров со
+													сшивающей способностью от 160 до 180 листов. Скобы № 23/20 выполнены из металла с никелированным
+													покрытием. 1000 скоб в картонной пачке.</p>
+												<span class="price">289.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix writing writing-l sale" data-order="65">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p1.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Линейка
+														50 см Attache</a>
+												<p class="product-description">50-сантиметровая линейка Attache выполнена из
+														полистирола. Удобная в использовании линейка с четкой разметкой, высокого качества.
+														Флуоресцентные цвета: желтый, малиновый, оранжевый, зеленый.</p>
+														<span class="old-price">73.00 &#8381;</span>
+												<span class="price">65.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix writing writing-k sale" data-order="59">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p2.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Корректирующая ручка 8мл KORES
+														Preсiso</a>
+												<p class="product-description">Корректирующий карандаш Kores Preciso, предназначен для
+														точечных исправлений текста на любых видах бумаги. Объем флакона - 8 мл. Металлический шариковый
+														наконечник позволяет наносить линии толщиной 0,9 мм. Прозрачный колпачок с клипом защищает от
+														высыхания.</p>
+														<span class="old-price">99.00 &#8381;</span>
+												<span class="price">59.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix writing writing-m sale" data-order="49">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p3.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Маркер
+														перманентный ICO TOP B черный 3мм</a>
+												<p class="product-description">Маркер для письма на любых поверхностях. Чернила на
+														спиртовой основе. Круглый наконечник. Толщина линии 3 мм. Цвет-черный.</p>
+														<span class="old-price">82.00 &#8381;</span>
+												<span class="price">49.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix writing writing-m sale" data-order="259">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p4.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Набор
+														маркеров EDDING E-330/4S 4 шт/уп 1-5мм</a>
+												<p class="product-description">Маркер перманентный. Светостойкие, быстросохнущие
+														чернила на спиртовой основе. Пластиковый корпус. Скошенный наконечник. Толщина письма 1 - 5мм.
+														Цвета: синий, черный, зеленый, красный. Производство - Германия</p>
+														<span class="old-price">347.00 &#8381;</span>
+												<span class="price">259.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix development development-m" data-order="71">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p21.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Пластилин 12цв восковой Каляка-Маляка ПВКМ12 180гр</a>
+												<p class="product-description">Состав: воск, парафин, мел, каолин, пигменты.</p>
+												<span class="price">71.50</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix development development-m" data-order="16">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p22.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Мел штучный белый ArtSpace, 12,5г, картонная коробка</a>
+												<p class="product-description">Белый мел для классных и аудиторных досок. Подходит для рисования на асфальте. Разделен на бруски.</p>
+												<span class="price">16.60</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix development development-n" data-order="665">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p23.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Набор д/выжигания электровыжигатель</a>
+												<p class="product-description">6 насадок, 2 доски 15*15 см с нанесенным рисунком НР-0266 Транспорт</p>
+												<span class="price">665.50</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix development development-p" data-order="275">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p24.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Пластилин Гамма "Классический", 36 цветов, 720г, со стеком, картон</a>
+												<p class="product-description">Гамма "Классическая" серия для маленьких, которые ощущают себя большими.
+														В серии используются современные светостойкие пигменты, обеспечивающие более яркие и сочные цвета. Цвета легко смешиваются. Пластилин не липнет к рукам, не оставляет жирных пятен. </p>
+												<span class="price">275.68</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix development development-p" data-order="102">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p25.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Пластилин Гамма "Флюрики", 12 цветов, флуоресцентный, со стеком, картон</a>
+												<p class="product-description">Пластилин Гамма "Флюрики" предназначен для занятий лепкой. Развивает детскую микромоторику и творческие способности. Ультра яркие цвета светятся в темноте, благодаря флюоресцентным добавкам. </p>
+												<span class="price">102.22</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-с" data-order="424">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p26.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Бумага цветная ColorCode (голубая пастель), 80г, А4, 500 листов</a>
+												<p class="product-description">Цветная бумага для офиса Color Code предназначена для печати на всех видах оргтехники и ризографах. Идеально подходит для документов, презентаций, рекламных материалов, открыток. Рекомендована ведущими производителями офисной техники.</p>
+												<span class="price">424.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-с" data-order="383">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p27.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Бумага цветная ColorCode (красный интенсив), 80г, А4, 500 листов</a>
+												<p class="product-description">Цветная бумага для офиса Color Code предназначена для печати на всех видах оргтехники и ризографах. Идеально подходит для документов, презентаций, рекламных материалов, открыток. Рекомендована ведущими производителями офисной техники.</p>
+												<span class="price">383.00</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-t" data-order="43">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p28.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Тетрадь 96л., А4, клетка OfficeSpace, бумвинил, эконом</a>
+												<p class="product-description">Тетрадь для записей. Блок в клетку, офсет белизна 80%. Обложка - бумвинил.</p>
+												<span class="price">43.50</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-t" data-order="28">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p29.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Тетрадь 48л., А5, клетка Greenwich Line "Supercar", глянцевая ламинация, 70г/м2</a>
+												<p class="product-description">Тетрадь общая 48 л. на скобе, формата А5 (165*205 мм). Внутренний блок – офсетная бумага повышенной плотности 70 г/м², белизна 100%, клетка. Обложка изготовлена из импортоного целлюлозного мелованного картона с двусторонней запечаткой, отделка обложки – глянцевая ламинация.</p>
+												<span class="price">28.46</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-t" data-order="182">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p30.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Тетрадь 48л. А5, клетка, ЛАЙТ, кожзам, Greenwich Line "Summerfest"</a>
+												<p class="product-description">Тетрадь в мягкой интегральной обложке из высококачественного кожзаменителя, подходит под персонализацию. Внутренний блок – тонированный в клетку. Прошитый блок. Закладка-ляссе.</p>
+												<span class="price">182.90</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-f" data-order="62">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p31.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Фломастеры Berlingo "Жил-был кот", 12цв., смываемые, блистер</a>
+												<p class="product-description">Легкосмываемые чернила, вентилируемый колпачок, нетоксичны, корпус изготовлен из полипропилена. Упакованы в блистер с петлей-европодвесом. Длина линии не менее 500 м</p>
+												<span class="price">62.35</span><span> &#8381;</span>
+											</div>
+										</div>
+							</div>
+							<div class="col-md-4 col-sm-6 mix school school-f" data-order="1672">
+									<div class="product-item">
+											<figure>
+												<img src="img/product/p32.jpg" alt="">
+												<a href="#product-dialog" class="product-view popup-with-zoom-anim">Подробнее</a>
+											</figure>
+											<div class="product-inner">
+												<a href="#product-dialog" class="name-product popup-with-zoom-anim">Набор для рисования Carioca 100 фломастеров + раскраска, металлическая коробка</a>
+												<p class="product-description">Набор для рисования в металлической коробке. В составе набора 60 фломастеров Doodles, 40 фломастеров Bravo и раскраска. Набор будет отличным подарком для ребенка</p>
+												<span class="price">1672.49</span><span> &#8381;</span>
+											</div>
+										</div>
 							</div>
 						</div>
 					</div>
@@ -311,15 +758,17 @@
 		<div id="product-dialog" class="zoom-anim-dialog mfp-hide">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-5 col-12">
+					<div class="col-lg-5 col-md-5 col-12">
 						<figure><img src="img/product1.png" alt="" id="product-img"></figure>
 					</div>
-					<div class="col-lg-6 col-md-7 col-12">
+					<div class="col-lg-7 col-md-7 col-12">
 						<div class="product-dialog-description d-flex flex-column justify-content-center h-100">
 							<h2 id="product-name">Дырокол SAX 506 до 40л., металл, с лин., синий, Австрия-Венгрия</h2>
-							<p id="product-description">Материал корпуса дырокола: металл/пластик. Пробивает одновременно два
+							<p id="product-description">Материал корпуса дырокола: металл/пластик. Пробивает
+								одновременно два
 								отверстия. Диаметр
-								отверстия 5,5 мм. Расстояние между отверстиями 80 мм. Встроенная линейка отсутствует.</p>
+								отверстия 5,5 мм. Расстояние между отверстиями 80 мм. Встроенная линейка отсутствует.
+							</p>
 							<div class="product-price-quality d-flex align-items-center">
 								<div class="count">
 									<span class="quality minus">-</span>
@@ -329,7 +778,7 @@
 								<span id="product-form-price" class="price">100</span><span class="rub"> &#8381;</span>
 							</div>
 							<div class="wrap-btn">
-								<button class="btn">Заказать</button>
+								<button class="btn popup-order" href="#order-form">Оформить заказ</button>
 							</div>
 						</div>
 					</div>
@@ -337,7 +786,86 @@
 			</div>
 		</div>
 
+		<div id="product-dialog-sale" class="zoom-anim-dialog mfp-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-12">
+						<figure><img src="img/product1.png" alt="" id="product-img-sale"></figure>
+					</div>
+					<div class="col-lg-7 col-md-7 col-12">
+						<div class="product-dialog-description d-flex flex-column justify-content-center h-100">
+							<h2 id="product-name-sale">Дырокол SAX 506 до 40л., металл, с лин., синий, Австрия-Венгрия
+							</h2>
+							<p id="product-description-sale">Материал корпуса дырокола: металл/пластик. Пробивает
+								одновременно два
+								отверстия. Диаметр
+								отверстия 5,5 мм. Расстояние между отверстиями 80 мм. Встроенная линейка отсутствует.
+							</p>
+							<div class="product-price-quality d-flex align-items-center">
+								<div class="count">
+									<span class="quality minus">-</span>
+									<input type="number" name="count-product" id="count-product" value="1" min="1">
+									<span class="quality plus">+</span>
+								</div>
+								<span id="product-form-sale-price" class="price">100</span><span class="rub">
+									&#8381;</span>
+							</div>
+							<div class="wrap-btn">
+								<button class="btn popup-order" href="#order-form" id="sale-order">Оформить
+									заказ</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- order-form -->
+
+		<form id="order-form" class="mfp-hide white-popup-block">
+			<h1>Ваш заказ</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<figure>
+							<img src="img/product1.png" alt="" id="img-order">
+						</figure>
+						<p>Количество товара: <span class="count-order" id="count-order-show">2</span><span> шт.</span>
+						</p>
+						<p>Сумма заказа: <span class="quality" id="quality-order-show">2000</span><span class="rub">
+								&#8381;</span>
+						</p>
+					</div>
+					<div class="col-md-6 col-12">
+						<fieldset style="border:0;">
+							<ol>
+								<li>
+									<input id="name" name="name" type="text" placeholder="Имя" required="">
+								</li>
+								<li>
+									<input id="email" name="email" type="e-mail" placeholder="e-mail" required="">
+								</li>
+								<li>
+									<input id="phone-1" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+								</li>
+								<li>
+									<label for="textarea">Комментарий к заказу</label><br>
+									<textarea id="textarea" name="comment"></textarea>
+								</li>
+							</ol>
+							<input id="name-order" type="text" name="name-order" hidden>
+							<input id="price-order" type="text" name="price-order" hidden>
+							<input id="count-order" type="text" name="count-order" hidden>
+							<input id="quality-order" type="text" name="quality-order" hidden>
+						</fieldset>
+						<div id="messegeResult-order">
+							<button id="submit-form-z" type="submit" form="order-form" class="btn">Отправить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</form>
 	</main>
 
 	<footer class="page-footer">
@@ -347,9 +875,9 @@
 					<h2>Навигация</h2>
 					<ul>
 						<li><a href="index.html">Главная</a></li>
-						<li><a href="#">Каталог</a></li>
+						<li><a href="catalog.html" class="menu-with-submenu category-href" id="all">Каталог</a></li>
 						<li><a href="pay-delivery.html">Доставка и оплата</a></li>
-						<li><a href="#">Скидки</a></li>
+						<li><a href="catalog.html" class="menu-with-submenu category-href" id="sale">Скидки</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
@@ -357,32 +885,36 @@
 				<div class="col-sm-6 col-md-3">
 					<h2>Каталог</h2>
 					<ul>
-						<li><a href="#">Бумага</a></li>
-						<li><a href="#">Для офиса</a></li>
-						<li><a href="#">Письменные принадлежности</a></li>
-						<li><a href="#">Развивающие товары</a></li>
-						<li><a href="#">Товары для школы</a></li>
+						<li><a class="category-href" href="catalog.html" id="peppers">Бумага</a></li>
+						<li><a class="category-href" href="catalog.html" id="office">Товары для офиса</a></li>
+						<li><a class="category-href" href="catalog.html" id="writing">Письменные принадлежности</a></li>
+						<li><a class="category-href" href="catalog.html" id="development">Развивающие товары</a></li>
+						<li><a class="category-href" href="catalog.html" id="school">Товары для школы</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<h2>Социальные сети</h2>
 					<ul>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Vk</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Youtube</a></li>
-						<li><a href="#">Instagram</a></li>
+						<li><a href="https://twitter.com/">Twitter</a></li>
+						<li><a href="https://vk.com">Vk</a></li>
+						<li><a href="https://www.facebook.com/">Facebook</a></li>
+						<li><a href="https://www.youtube.com/">Youtube</a></li>
+						<li><a href="https://www.instagram.com">Instagram</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<h2>Контакты</h2>
 					<ul>
-						<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>+7 (861) 99-99-999</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@info.ru</a></li>
+						<li><a href="tel:+78619999999"><i class="fa fa-phone" aria-hidden="true"></i>+7 (861)
+								99-99-999</a></li>
+						<li><a href="mailto:info@info.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@info.ru</a></li>
 						<li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>пн - сб (09:00 - 18:00)
 							</a></li>
-						<li><a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>Показать на карте</a>
-						</li>
+						<li> <a
+								href="https://yandex.ru/map-widget/v1/?um=constructor%3A46503954a639ddf158babc40cecd2fc92ba3b58baa1a9928806c2a0d7dec337a&amp;source=constructor"
+								class="popup-with-zoom-anim popup-gmaps"><i class="fa fa-location-arrow" aria-hidden="true"></i>Показать
+								на
+								карте</a></li>
 					</ul>
 				</div>
 			</div>
@@ -390,6 +922,7 @@
 		<div class="copyright">
 			<div class="span">© Copyright 2019</div>
 		</div>
+
 	</footer>
 
 

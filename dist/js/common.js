@@ -16,12 +16,15 @@ function AjaxFormRequest(result_id,formMain,url) {
         dataType: "html", 
         data: jQuery("#"+formMain).serialize(), 
         success: function(response) { 
-            document.getElementById(result_id).innerHTML = response; 
+            $("#"+result_id).append(response); 
             $(':input','#'+formMain) 
             .not(':button, :submit, :reset, :hidden') 
             .val('') 
             .removeAttr('checked') 
             .removeAttr('selected');
+            setTimeout(() => {
+                $("#message").hide();
+            }, 5000);
         }, 
         error: function(response) { 
             $('.m-0').remove();
@@ -35,6 +38,45 @@ function AjaxFormRequest(result_id,formMain,url) {
         } 
     }); 
 }
+
+window.addEventListener("DOMContentLoaded", function() {
+	function setCursorPosition(pos, elem) {
+        elem.focus();
+        if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+        else if (elem.createTextRange) {
+            var range = elem.createTextRange();
+            range.collapse(true);
+            range.moveEnd("character", pos);
+            range.moveStart("character", pos);
+            range.select()
+        }
+	}
+    
+	function mask(event) {
+        var matrix = "+7 (___) ___ __ __",
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, "");
+        if (def.length >= val.length) val = def;
+        this.value = matrix.replace(/./g, function(a) {
+            return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+        });
+        if (event.type == "blur") {
+            if (this.value.length == 2) this.value = ""
+        } else setCursorPosition(this.value.length, this)
+	};
+    var input = document.querySelector("#phone");
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    var input2 = document.querySelector("#phone-1");
+    input2.addEventListener("input", mask, false);
+    input2.addEventListener("focus", mask, false);
+    input2.addEventListener("blur", mask, false);
+});
+
+
+
 
 $(document).ready(function () {
 
@@ -65,7 +107,7 @@ var owl = $('.popular-product').owlCarousel({
         },
         1200:{
             items:4,
-            loop:false
+            loop:true
         }
     }
 });
@@ -89,7 +131,7 @@ var owl2 = $('.office-product').owlCarousel({
         },
         1200:{
             items:4,
-            loop:false
+            loop:true
         }
     }
 });
@@ -113,7 +155,7 @@ var owl3 = $('.papper-product').owlCarousel({
         },
         1200:{
             items:4,
-            loop:false
+            loop:true
         }
     }
 });
@@ -260,7 +302,7 @@ $("a[href='#product-dialog-sale']").click(function () {
 $("button[href='#order-form']").click(function () {
     $('#name-order').val($("#product-name").text());
     $('#quality-order').val($('#product-form-price').text());
-    $('#price-order').val(price);
+    $('#price-order').val((price / 100).toFixed(2));
     $('#img-order').attr('src', $("#product-img").attr('src'));
     $('#count-order').val($('#count-product').val());
     $('#count-order-show').text($('#count-order').val());
@@ -270,7 +312,7 @@ $("button[href='#order-form']").click(function () {
 $("#sale-order").click(function () {
     $('#name-order').val($("#product-name-sale").text());
     $('#quality-order').val($('#product-form-sale-price').text());
-    $('#price-order').val(price);
+    $('#price-order').val((price / 100).toFixed(2));
     $('#img-order').attr('src', $("#product-img-sale").attr('src'));
     $('#count-order').val($('#count-product').val());
     $('#count-order-show').text($('#count-order').val());
@@ -382,33 +424,42 @@ for (let i = 0; i < a.length; i++) {
     }
 }
 
-$("#all").click(function () { 
+$("#allMix").click(function () { 
     $(".sort-category-wrapper").hide();
+    console.log(1);
 });
 
-$("#peppers").click(function () { 
+$("#peppersMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-pepper").show();
 });
 
-$("#office").click(function () { 
+$("#officeMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-office").show();
 });
 
-$("#writing").click(function () { 
+$("#writingMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-writing").show();
 });
 
-$("#development").click(function () { 
+$("#developmentMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-development").show();
 });
 
-$("#school").click(function () { 
+$("#schoolMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-school").show();
+});
+
+$(".catalog-h").click(function () { 
+    $("#catalog-h").text($(this).text());
+});
+
+$(".catalog-h-all").click(function () { 
+    $("#catalog-h").text("Продукция");
 });
 
 });
