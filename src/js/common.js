@@ -424,33 +424,42 @@ for (let i = 0; i < a.length; i++) {
     }
 }
 
-$("#all").click(function () { 
+$("#allMix").click(function () { 
     $(".sort-category-wrapper").hide();
+    console.log(1);
 });
 
-$("#peppers").click(function () { 
+$("#peppersMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-pepper").show();
 });
 
-$("#office").click(function () { 
+$("#officeMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-office").show();
 });
 
-$("#writing").click(function () { 
+$("#writingMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-writing").show();
 });
 
-$("#development").click(function () { 
+$("#developmentMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-development").show();
 });
 
-$("#school").click(function () { 
+$("#schoolMix").click(function () { 
     $(".sort-category-wrapper").show().children().hide();
     $(".sort-category-school").show();
+});
+
+$(".catalog-h").click(function () { 
+    $("#catalog-h").text($(this).text());
+});
+
+$(".catalog-h-all").click(function () { 
+    $("#catalog-h").text("Продукция");
 });
 
 });
