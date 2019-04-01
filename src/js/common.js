@@ -1,3 +1,36 @@
+$('#form-callback').submit(function(e){
+    e.preventDefault();
+    AjaxFormRequest('messegeResult-callback','form-callback','./callback.php');
+});
+
+
+function AjaxFormRequest(result_id,formMain,url) { 
+    jQuery.ajax({ 
+        url: url, 
+        type: "POST", 
+        dataType: "html", 
+        data: jQuery("#"+formMain).serialize(), 
+        success: function(response) { 
+            document.getElementById(result_id).innerHTML = response; 
+            $(':input','#'+formMain) 
+            .not(':button, :submit, :reset, :hidden') 
+            .val('') 
+            .removeAttr('checked') 
+            .removeAttr('selected');
+        }, 
+        error: function(response) { 
+            $('.m-0').remove();
+            var par = document.getElementById(result_id);
+            var error = document.createElement('p');
+            error.classList.add("mt-3");
+            error.innerHTML = "Возникла ошибка при отправке формы. Попробуйте еще раз";
+            if (result_id != 'messegeResult-sub'){
+                par.appendChild(error);
+            }
+        } 
+    }); 
+}
+
 $(document).ready(function () {
 
 $('.slider-wrapper').owlCarousel({
@@ -250,6 +283,27 @@ $("#call-me").click(function () {
 });
 
 
+$('.popup-order').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+
+
+
+
 // mixitup
 
 $(".category-href").click(function(){
@@ -333,3 +387,4 @@ $("#school").click(function () {
 });
 
 });
+

@@ -12158,7 +12158,8 @@ a:active {
 }
 
 #product-dialog,
-#product-dialog-sale {
+#product-dialog-sale,
+#order-form {
   text-align: left;
   max-width: 60%;
   padding: 15px;
@@ -12169,32 +12170,37 @@ a:active {
 
 @media (max-width: 1199px) {
   #product-dialog,
-    #product-dialog-sale {
+    #product-dialog-sale,
+    #order-form {
     max-width: 75%;
   }
 }
 
 @media (max-width: 991px) {
   #product-dialog,
-    #product-dialog-sale {
+    #product-dialog-sale,
+    #order-form {
     max-width: 85%;
   }
 }
 
 @media (max-width: 767px) {
   #product-dialog,
-    #product-dialog-sale {
+    #product-dialog-sale,
+    #order-form {
     max-width: 95%;
   }
 }
 
 #product-dialog figure img,
-  #product-dialog-sale figure img {
+  #product-dialog-sale figure img,
+  #order-form figure img {
   width: 100%;
 }
 
 #product-dialog h2,
-  #product-dialog-sale h2 {
+  #product-dialog-sale h2,
+  #order-form h2 {
   text-transform: uppercase;
   font-size: 2.5em;
   line-height: 1.3;
@@ -12202,14 +12208,16 @@ a:active {
 
 @media (max-width: 1199px) {
   #product-dialog h2,
-      #product-dialog-sale h2 {
+      #product-dialog-sale h2,
+      #order-form h2 {
     font-size: 2em;
   }
 }
 
 @media (max-width: 991px) {
   #product-dialog h2,
-      #product-dialog-sale h2 {
+      #product-dialog-sale h2,
+      #order-form h2 {
     font-size: 1.7em;
   }
 }
@@ -12217,7 +12225,9 @@ a:active {
 #product-dialog .price,
   #product-dialog .rub,
   #product-dialog-sale .price,
-  #product-dialog-sale .rub {
+  #product-dialog-sale .rub,
+  #order-form .price,
+  #order-form .rub {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
@@ -12225,7 +12235,8 @@ a:active {
 }
 
 #product-dialog button.btn,
-  #product-dialog-sale button.btn {
+  #product-dialog-sale button.btn,
+  #order-form button.btn {
   border: none;
   background-color: #f93637;
   color: #ffffff;
@@ -12240,20 +12251,23 @@ a:active {
 
 @media (max-width: 1199px) {
   #product-dialog button.btn,
-      #product-dialog-sale button.btn {
+      #product-dialog-sale button.btn,
+      #order-form button.btn {
     font-size: 1.3em;
   }
 }
 
 @media (max-width: 991px) {
   #product-dialog button.btn,
-      #product-dialog-sale button.btn {
+      #product-dialog-sale button.btn,
+      #order-form button.btn {
     padding: 10px 30px;
   }
 }
 
 #product-dialog .count,
-  #product-dialog-sale .count {
+  #product-dialog-sale .count,
+  #order-form .count {
   border: 1px solid #000000;
   border-radius: 20px;
   margin-right: 40px;
@@ -12261,14 +12275,16 @@ a:active {
 
 @media (max-width: 767px) {
   #product-dialog .count,
-      #product-dialog-sale .count {
+      #product-dialog-sale .count,
+      #order-form .count {
     width: fit-content;
     margin: 0 auto;
   }
 }
 
 #product-dialog .count .quality,
-    #product-dialog-sale .count .quality {
+    #product-dialog-sale .count .quality,
+    #order-form .count .quality {
   padding: 10px 15px;
   line-height: 1;
   cursor: pointer;
@@ -12276,7 +12292,8 @@ a:active {
 }
 
 #product-dialog .count #count-product,
-    #product-dialog-sale .count #count-product {
+    #product-dialog-sale .count #count-product,
+    #order-form .count #count-product {
   max-height: 45px;
   width: 45px;
   padding: 10px 10px 9px 15px;
@@ -12287,18 +12304,21 @@ a:active {
 }
 
 #product-dialog .count #count-product:focus,
-      #product-dialog-sale .count #count-product:focus {
+      #product-dialog-sale .count #count-product:focus,
+      #order-form .count #count-product:focus {
   outline: none 0;
 }
 
 #product-dialog .count #count-product::-webkit-inner-spin-button,
-      #product-dialog-sale .count #count-product::-webkit-inner-spin-button {
+      #product-dialog-sale .count #count-product::-webkit-inner-spin-button,
+      #order-form .count #count-product::-webkit-inner-spin-button {
   display: none;
 }
 
 @media (max-width: 767px) {
   #product-dialog .product-price-quality,
-    #product-dialog-sale .product-price-quality {
+    #product-dialog-sale .product-price-quality,
+    #order-form .product-price-quality {
     display: block !important;
     text-align: center;
   }
@@ -12306,7 +12326,8 @@ a:active {
 
 @media (max-width: 767px) {
   #product-dialog .wrap-btn,
-    #product-dialog-sale .wrap-btn {
+    #product-dialog-sale .wrap-btn,
+    #order-form .wrap-btn {
     text-align: center;
   }
 }

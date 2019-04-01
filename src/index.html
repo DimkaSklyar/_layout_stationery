@@ -62,7 +62,7 @@
                     </li>
                   </ol>
                 </fieldset>
-                <div id="messegeResult-order">
+                <div id="messegeResult-callback">
                   <button id="submit-form-z" type="submit" form="form-callback" class="btn">Отправить</button>
                 </div>
               </form>
@@ -670,7 +670,7 @@
                 <span id="product-form-price" class="price">100</span><span class="rub"> &#8381;</span>
               </div>
               <div class="wrap-btn">
-                <button class="btn">Заказать</button>
+                <button class="btn popup-order" href="#order-form">Заказать</button>
               </div>
             </div>
           </div>
@@ -699,7 +699,7 @@
                 <span id="product-form-sale-price" class="price">100</span><span class="rub"> &#8381;</span>
               </div>
               <div class="wrap-btn">
-                <button class="btn">Заказать</button>
+                <button class="btn popup-order" href="#order-form">Заказать</button>
               </div>
             </div>
           </div>
@@ -707,6 +707,32 @@
       </div>
     </div>
 
+<!-- order-form -->
+
+<form id="order-form" class="mfp-hide white-popup-block">
+	<h1>Form</h1>
+	<fieldset style="border:0;">
+		<p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
+		<ol>
+			<li>
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" placeholder="Name" required="">
+			</li>
+			<li>
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+			</li>
+			<li>
+				<label for="phone">Phone</label>
+				<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+			</li>
+			<li>
+				<label for="textarea">Textarea</label><br>
+				<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+			</li>
+		</ol>
+	</fieldset>
+</form>
   </main>
 
   <footer class="page-footer">
@@ -762,6 +788,7 @@
     <div class="copyright">
       <div class="span">© Copyright 2019</div>
     </div>
+
   </footer>
 
 
